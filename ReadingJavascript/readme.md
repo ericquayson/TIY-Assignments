@@ -10,6 +10,8 @@ semicolon - is a statement operator
 
 Sometimes Javascript can be read from left to right or right to left (depending on hierarchy of the operations)
 
+function identifier () {}; -- the function definition
+
 To invoke a function     ____();
                       function name
   
