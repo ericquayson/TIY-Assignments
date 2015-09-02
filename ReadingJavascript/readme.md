@@ -8,7 +8,15 @@ Example of a 'bear' word = var foo = foo;
 
 semicolon - is a statement operator 
 
+Sometimes Javascript can be read from left to right or right to left (depending on hierarchy of the operations)
+
 To invoke a function     ____();
                       function name
+  
+  weirdos operators: . () 
+  
+  comparsion  operators: === (this means a strict comparsion which is best practice)
                       
   console.log -- is an unanimous function
+
+function
