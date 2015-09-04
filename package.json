@@ -1,0 +1,23 @@
+{
+  "name": "TIY-Assignments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "BasicCalculator.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ericquayson/TIY-Assignments.git"
+  },
+  "author": "Eric <ericquayson@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ericquayson/TIY-Assignments/issues"
+  },
+  "homepage": "https://github.com/ericquayson/TIY-Assignments",
+  "dependencies": {
+    "chai": "^3.2.0",
+    "mocha": "^2.3.0"
+  }
+}
