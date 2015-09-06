@@ -3,6 +3,7 @@
  * and returns the largest of them. HINT: Use `if-else`...!
  */
 
+
 console.assert(max(1,3) === 3);
 console.assert(max(0,3) === 3);
 console.assert(max(10,3) === 10);
@@ -21,7 +22,12 @@ console.assert(isNaN(max("aaa","bbb")));
  */
 function max(A, B){
     // YOUR CODE HERE
-    return A > B;
+    if (A > B) {
+      return A;
+
+    } else {
+      return B;
+    }
 }
 
 /**
@@ -47,6 +53,13 @@ console.assert(isNaN(maxOfThree("aaa","bbb","ccc")));
  */
 function maxOfThree(A, B, C){
     // YOUR CODE HERE
+    if (A > B && A > C) {
+      return A;
+    } else if (B > A && B > C) {
+      return B;
+    } else {
+      return C;
+    }
 }
 
 /**
@@ -64,7 +77,7 @@ console.assert(isVowel("a") === true);
 console.assert(isVowel("E") === true);
 
 // What should _this_ do?
-// console.assert(isVowel("AEIOU") === FILL_ME_IN);
+// console.assert(isVowel("AEIOU") === true);
 
 /**
  * @param {String} char of length 1
@@ -72,6 +85,11 @@ console.assert(isVowel("E") === true);
  */
 function isVowel(char){
     // YOUR CODE HERE
+    if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u" ) {
+      return true;
+    } else {
+      return false;
+    }
 }
 
 /**
