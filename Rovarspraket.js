@@ -122,13 +122,10 @@ function isVowel(char){
  */
 function disemvowel(comment){
   // YOUR CODE HERE
-  var comment = "";
-  for (var i = 0; i < comment.length; i++) {
-    if (isVowel(comment[i] === false;) {
-      comment = comment.concat(comment[i])
-    }
-  }
-  return comment;
+  if (comment !== "A | E | I | O | U")
+  return true;
+} else {
+  return false;
 }
 
 // Shorter test cases might be appreciated...
