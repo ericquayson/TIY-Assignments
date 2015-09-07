@@ -85,7 +85,27 @@ console.assert(isVowel("E") === true);
  */
 function isVowel(char){
     // YOUR CODE HERE
-    if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u" ) {
+    if (char === "AEIOU") {
+      return true;
+    } else if (char == "a") {
+      return true;
+    } else if (char == "e") {
+      return true;
+    } else if (char == "i") {
+      return true;
+    } else if (char == "o") {
+      return true;
+    } else if (char == "u") {
+      return true;
+    } else if (char == "A"){
+      return true;
+    } else if (char == "E") {
+      return true;
+    } else if (char == "I") {
+      return true;
+    } else if (char == "O") {
+      return true;
+    } else if (char == "U") {
       return true;
     } else {
       return false;
@@ -129,8 +149,9 @@ console.assert(
  * @param {String} text to translate into "rövarspråket"
  * @return {String} translation
  */
-function rovarspraket(input){
+function rovarspraket(phrase){
     // YOUR CODE HERE
+
 }
 
 // Feel free to provide additional examples...
