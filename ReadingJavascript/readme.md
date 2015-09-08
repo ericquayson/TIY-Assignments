@@ -214,36 +214,36 @@ switch (expression) {
 
 var names = ["Eric", "Tee"];
 
-Array come equipped with a lot of functionality
+## Array come equipped with a lot of functionality
 
  ##Methods
  
- *push
+ + push
  
- Adds to the end of an Array
+## Adds to the end of an Array
  
  var newNames = names.push("Quan");
  // ["Eric", "Tee", "Quan"]
  
- *pop
+ + pop
  
- Remove from the end of an Array
+## Remove from the end of an Array
  
  var lastName = names.pop(); //removes Quan from the end
  // ["Eric", "Tee"]
  
- Remove from the front of an Array
+## Remove from the front of an Array
  
  var lastLastName = names.shift(); // remove Eric from the front
  // ["Tee"]
  
- Add to the front of an Array
+## Add to the front of an Array
  
  var lasttName = names.unshift("Teach") // adds Teach to the front of the array
  
  // ["Teach", "Tee"]
  
- Find the index of an item in the Array
+ ## Find the index of an item in the Array
  
  names.push("Cecil");
  // ["Teach", "Tee", "Cecil"]
@@ -251,12 +251,12 @@ Array come equipped with a lot of functionality
  var pos = names.indexOf("Tee");
  // 1
  
- Remove an item by Index Position
+ ## Remove an item by Index Position
  
  var removedItem = names.splice(pos, 1); // this is how to remove an element 
  // ["Teach", "Cecil"]
  
  
- finding the length of the array
+## finding the length of the array
  
  names.length //2 
