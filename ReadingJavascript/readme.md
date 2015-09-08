@@ -1,11 +1,11 @@
 # About JavaScript
-
-JavaScript is a programming language that allows the user to add functionality to their web application or website. JavaScript comes equip with powerful tools that allow for the developer to listen for events, store data, create clean and concise code. 
+===================
+> JavaScript is a programming language that allows the user to add functionality to their web application or website.          JavaScript comes equip with powerful tools that allow for the developer to listen for events, store data, create clean and concise code. 
 
 ### Basic JavaScript
-
+===================
 ## 4 Primitive Types
-
+---------------------
 #### null - which is an empty value
 #### boolean - which returns two value (true or false)
 #### numeric value - any number
@@ -207,3 +207,56 @@ switch (expression) {
     [break;]
 }
 
+### Array 
+
+>  An Array object is a global object that is used in the construction of arrays; which are high-level, list-like objects. 
+>  Create an Array
+
+var names = ["Eric", "Tee"];
+
+Array come equipped with a lot of functionality
+
+ ##Methods
+ 
+ *push
+ 
+ Adds to the end of an Array
+ 
+ var newNames = names.push("Quan");
+ // ["Eric", "Tee", "Quan"]
+ 
+ *pop
+ 
+ Remove from the end of an Array
+ 
+ var lastName = names.pop(); //removes Quan from the end
+ // ["Eric", "Tee"]
+ 
+ Remove from the front of an Array
+ 
+ var lastLastName = names.shift(); // remove Eric from the front
+ // ["Tee"]
+ 
+ Add to the front of an Array
+ 
+ var lasttName = names.unshift("Teach") // adds Teach to the front of the array
+ 
+ // ["Teach", "Tee"]
+ 
+ Find the index of an item in the Array
+ 
+ names.push("Cecil");
+ // ["Teach", "Tee", "Cecil"]
+ 
+ var pos = names.indexOf("Tee");
+ // 1
+ 
+ Remove an item by Index Position
+ 
+ var removedItem = names.splice(pos, 1); // this is how to remove an element 
+ // ["Teach", "Cecil"]
+ 
+ 
+ finding the length of the array
+ 
+ names.length //2 
