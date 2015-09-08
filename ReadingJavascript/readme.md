@@ -103,4 +103,30 @@ To invoke a function     ____();
                       
   console.log -- is an unanimous function
 
-function
+## Functions
+
+Functions are a form of [control flow](http://en.wikipedia.org/wiki/Control_flow) used in computer programs... (you fill in the rest)
+
+### `function` keyword
+
+The `function` keyword is used to _define_ a function with parentheses and curly braces:
+
+    // This is a Function Definition for `functionName`...
+    function functionName ( /* arguments go here */ ) {
+      // body of function goes here
+    }
+// the start of the function definition
+function hello (name) {
+// the body of the function `hello`
+ console.log("My name is " + " ")
+// the function innovocation
+} hello(eric);
+Once a function has been defined, it can be _invoked_ by... 
+functionName(); 
+
+### `typeof` keyword
+
+The `typeof` keyword function determines which of the 4 primitive types that element could be 
+
+However, beyond the four primitive types, `typeof` can tell you if the element `undefined` or `null` are objects
+
