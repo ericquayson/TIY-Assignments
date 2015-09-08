@@ -35,17 +35,14 @@ test('evens', function(){
   expect(evens([ 2 ]).to.deep.equal([ 2 ]));
   expect(evens([ 1, 2 ]).to.deep.equal([ 2 ]));
   expect(evens([1, 2, 3, 5, 8, 13]).to.deep.equal([2, 8]))
+  expect(evens([1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144]).to.deep.equal([2, 8, 34, 144]));
+
   // More tests, perhaps?
 }); // END test(evens)
 
 function evens (number) {
 
-  while(a < 4000000000) {
-
-    if (a % 2 === 0) {
-      sum +=
-    }
-  }
+  
 
 }
 
