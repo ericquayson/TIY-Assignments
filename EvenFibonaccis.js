@@ -5,26 +5,24 @@ test('generating the Fibonacci sequence', function(){
   expect(fibonacci(0)).to.deep.equal([0]);
   expect(fibonacci(1)).to.deep.equal([ 1 ]);
   expect(fibonacci(2)).to.deep.equal([ 1, 2 ]);
-  expect(fibonacci(5)).to.deep.equal([1, 2, 3, 5 ]);
-  expect(fibonacci(8)).to.deep.equal([1, 2, 3, 5, 8]);
-  expect(fibonacci(13)).to.deep.equal([1, 2, 3, 5, 8, 13]);
-  expect(fibonacci(21)).to.deep.equal([1, 2, 3, 5, 8, 13, 21]);
-  expect(fibonacci(34)).to.deep.equal([1, 2, 3, 5, 8, 13, 21, 34]);
-  expect(fibonacci(55)).to.deep.equal([1, 2, 3, 5, 8, 13, 21, 34, 55]);
-  expect(fibonacci(89)).to.deep.equal([1, 2, 3, 5, 8, 13, 21, 34, 55, 89]);
-  expect(fibonancci(144)).to.deep.equal([1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144]);
+  expect(fibonacci(3)).to.deep.equal([1, 2, 3, 5 ]);
+  expect(fibonacci(4)).to.deep.equal([1, 2, 3, 5, 8]);
+  expect(fibonacci(5)).to.deep.equal([1, 2, 3, 5, 8, 13]);
+  expect(fibonacci(6)).to.deep.equal([1, 2, 3, 5, 8, 13, 21]);
+  expect(fibonacci(7)).to.deep.equal([1, 2, 3, 5, 8, 13, 21, 34]);
+  expect(fibonacci(8)).to.deep.equal([1, 2, 3, 5, 8, 13, 21, 34, 55]);
+  expect(fibonacci(9)).to.deep.equal([1, 2, 3, 5, 8, 13, 21, 34, 55, 89]);
+  expect(fibonancci(10)).to.deep.equal([1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144]);
 
   // ...ad nauseum.
 }); // END test(fibonacci)
 
 // Hey, where's `fibonacci`...? Uh oh...
 //
-var fibonan = [];
 
-function fibonancci () {
+function fibonancci (number) {
 
-  fibonan[0] = 0;
-  fibonan[1] = 1;
+  var fibonan = [];
 
   for (var i = 0; i <= 144; i++) {
     fibonan.push(i);
@@ -40,10 +38,23 @@ test('evens', function(){
   // More tests, perhaps?
 }); // END test(evens)
 
+function evens (number) {
+
+  while(a < 4000000000) {
+
+    if (a % 2 === 0) {
+      sum +=
+    }
+  }
+
+}
+
 test('sum', function(){
-  expect(sum([ ]), 0);
+  expect(sum([0 ]), 0);
   expect(sum([ 1 ]), 1);
   expect(sum([ 1, 1 ]), 2);
+  expect(sum([1, 1, 1]), 3);
+  expect(sum([1, 1, 1, 1]), 4);
   // ...et cetera, et cetera, et cetera.
 }); // END test(sum)
 
