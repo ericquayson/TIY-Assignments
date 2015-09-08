@@ -2,7 +2,7 @@ var test = require('mocha').it,
   expect = require('chai').expect;
 
 test('generating the Fibonacci sequence', function(){
-  expect(fibonacci(0)).to.deep.equal([ ]);
+  expect(fibonacci(0)).to.deep.equal([0]);
   expect(fibonacci(1)).to.deep.equal([ 1 ]);
   expect(fibonacci(2)).to.deep.equal([ 1, 2 ]);
   expect(fibonacci(5)).to.deep.equal([1, 2, 3, 5 ]);
@@ -18,10 +18,22 @@ test('generating the Fibonacci sequence', function(){
 }); // END test(fibonacci)
 
 // Hey, where's `fibonacci`...? Uh oh...
+//
+var fibonan = [];
+
+function fibonancci () {
+
+  fibonan[0] = 0;
+  fibonan[1] = 1;
+
+  for (var i = 0; i <= 144; i++) {
+    fibonan.push(i);
+  }
+}
 
 test('evens', function(){
-  expect(evens([ ]).to.deep.equal([ ]);
-  expect(evens([ 1 ]).to.deep.equal([ ]);
+  expect(evens([ 0 ]).to.deep.equal([0]);
+  expect(evens([ 1 ]).to.deep.equal([1]);
   expect(evens([ 1, 1, 1 ]).to.deep.equal([ ]);
   expect(evens([ 2 ]).to.deep.equal([ 2 ]);
   expect(evens([ 1, 2 ]).to.deep.equal([ 2 ]);
