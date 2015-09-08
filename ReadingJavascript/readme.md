@@ -130,3 +130,80 @@ The `typeof` keyword function determines which of the 4 primitive types that ele
 
 However, beyond the four primitive types, `typeof` can tell you if the element `undefined` or `null` are objects
 
+### Block Operator
+
+Block Operator - is used to group zero or more statemens. The block statements can be defined with curley brackets.
+
+example:
+
+{
+
+
+
+
+}
+
+### If, else statement
+
+If statement executes a statement if a specified condition is true. If the condition is false, another statement can be executed
+
+//if statement defition
+if (true) {
+  
+}
+
+Multiple If statements
+
+if (condition1)
+   statement1
+else if (condition2)
+   statement2
+else if (condition3)
+   statement3
+...
+else
+   statementN
+   
+   +There are multiple variations of what If statements can consist of
+   
+   if (condition1)
+   statement1
+else
+   if (condition2)
+      statement2
+   else
+      if (condition3)
+...
+
+While statements creates a loop that executes a specficied statement as long as the test condition `eval` to true. 
+
+while (condition) {
+  statement
+}
+
+do While statement creates a loop that executes a specified statement until the test condition evaluates to false. The condition is evaluated after executing the statement, resulting in the specified statement executing at least once. 
+
+#### Example 
+
+do
+   statement
+while (condition);
+
+switch statement evaluates an expression, matching the expression's value to a case clause, and executes statements associated with that case
+
+switch (expression) {
+  case value1:
+    //Statements executed when the result of expression matches value1
+    [break;]
+  case value2:
+    //Statements executed when the result of expression matches value2
+    [break;]
+  ...
+  case valueN:
+    //Statements executed when the result of expression matches valueN
+    [break;]
+  default:
+    //Statements executed when none of the values match the value of the expression
+    [break;]
+}
+
