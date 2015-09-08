@@ -31,6 +31,12 @@ function fibonacci (number) {
     }
     return f;
 }
+//var fib = function(number)
+// if(number <= 2) {
+    //return 1;
+// } else {
+// return this.fib(number - 1) + this.fib(number - 2);
+// }
 
 test('evens', function(){
   expect(evens([ 0 ]).to.deep.equal([0]));
@@ -46,15 +52,12 @@ test('evens', function(){
 
 function evens (number) {
   var fibonan = [];
+  this.fibonan = number.length;
 
-  var d = 0, e = 1, f = 1;
-    for(var i = 2; i <= number; i++ ) {
+  for (var count = 0; count < this.fibonan; count++) {
+    if (number[] / 2 == 0)
+  }
 
-      f = d + e;
-      d = e;
-      e = f;
-    }
-    return f;
 }
 
 test('sum', function(){
