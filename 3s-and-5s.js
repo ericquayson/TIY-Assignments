@@ -1,5 +1,5 @@
 var test = require('mocha').it,
-    expect = require('chai').expect, // Use `expect(X).to.be` et al
+    //expect = require('chai').expect, // Use `expect(X).to.be` et al
     assert = require('chai').assert;  // OR use `assert.equal` etc
 
 test('three', function(){
