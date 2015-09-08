@@ -19,13 +19,17 @@ test('generating the Fibonacci sequence', function(){
 
 // Hey, where's `fibonacci`...? Uh oh...
 //
-
-function fibonancci (number) {
-
+function fibonacci (number) {
   var fibonan = [];
-    if (var i = 0; i <= 10; i++) {
-    fibonan.push(i);
-  }
+
+  var d = 0, e = 1, f = 1;
+    for(var i = 2; i <= number; i++ ) {
+
+      f = d + e;
+      d = e;
+      e = f;
+    }
+    return f;
 }
 
 test('evens', function(){
@@ -41,9 +45,16 @@ test('evens', function(){
 }); // END test(evens)
 
 function evens (number) {
+  var fibonan = [];
 
-  
+  var d = 0, e = 1, f = 1;
+    for(var i = 2; i <= number; i++ ) {
 
+      f = d + e;
+      d = e;
+      e = f;
+    }
+    return f;
 }
 
 test('sum', function(){
