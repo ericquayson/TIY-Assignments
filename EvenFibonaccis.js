@@ -23,18 +23,18 @@ test('generating the Fibonacci sequence', function(){
 function fibonancci (number) {
 
   var fibonan = [];
-
-  for (var i = 0; i <= 144; i++) {
+    if (var i = 0; i <= 10; i++) {
     fibonan.push(i);
   }
 }
 
 test('evens', function(){
-  expect(evens([ 0 ]).to.deep.equal([0]);
-  expect(evens([ 1 ]).to.deep.equal([1]);
-  expect(evens([ 1, 1, 1 ]).to.deep.equal([ ]);
-  expect(evens([ 2 ]).to.deep.equal([ 2 ]);
-  expect(evens([ 1, 2 ]).to.deep.equal([ 2 ]);
+  expect(evens([ 0 ]).to.deep.equal([0]));
+  expect(evens([ 1 ]).to.deep.equal([]));
+  expect(evens([ 1, 1, 1 ]).to.deep.equal([ ]));
+  expect(evens([ 2 ]).to.deep.equal([ 2 ]));
+  expect(evens([ 1, 2 ]).to.deep.equal([ 2 ]));
+  expect(evens([1, 2, 3, 5, 8, 13]).to.deep.equal([2, 8]))
   // More tests, perhaps?
 }); // END test(evens)
 
