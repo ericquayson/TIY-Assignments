@@ -148,7 +148,7 @@ console.assert(
  */
 function rovarspraket(phrase){
     // YOUR CODE HERE
-
+    return phrase;
 }
 
 // Feel free to provide additional examples...
