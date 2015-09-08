@@ -52,12 +52,14 @@ test('evens', function(){
 
 function evens (number) {
   var fibonan = [];
-  this.fibonan = number.length;
+  this.fibonan = fibonan.length;
 
   for (var count = 0; count < this.fibonan; count++) {
-    if (number[] / 2 == 0)
+    if (number[count] / 2 == 0) {
+      fibonan.push(number[count]);
+    }
   }
-
+    return evens;
 }
 
 test('sum', function(){
@@ -70,6 +72,14 @@ test('sum', function(){
 }); // END test(sum)
 
 // You expect me to write `sum`, too?
+
+function sum (number) {
+  var add = 0;
+  for (var count = 0; count < this.fibonan; count++) {
+    add = sum + number[count];
+  }
+  return sum;
+}
 
 test('summing even Fibonacci numbers?', function(){
   expect( sum(evens(fibonacci(0))) ).to.equal(FILL_ME_IN); // nice.
