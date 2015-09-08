@@ -1,4 +1,4 @@
-####### About JavaScript
+# About JavaScript
 
 JavaScript is a programming language that allows the user to add functionality to their web application or website. JavaScript comes equip with powerful tools that allow for the developer to listen for events, store data, create clean and concise code. 
 
@@ -6,14 +6,14 @@ JavaScript is a programming language that allows the user to add functionality t
 
 ## 4 Primitive Types
 
-# null - which is an empty value
-# boolean - which returns two value (true or false)
-# numeric value - any number
-# string - "any set of characters or none at all within quotations marks"
+#### null - which is an empty value
+#### boolean - which returns two value (true or false)
+#### numeric value - any number
+#### string - "any set of characters or none at all within quotations marks"
 
-## Basic Operators
+### Basic Operators
 
-Arithmetic
+## Arithmetic
 
 addition
 
