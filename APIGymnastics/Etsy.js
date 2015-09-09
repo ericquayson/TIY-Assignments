@@ -27,6 +27,11 @@ test('finding that perfect $15 item', function(){
    */
   function pricedBetween(items, min, max){
     // Just a suggestion, really...
+      var items15 = [];
+      for (var i = 0; i < 23.63 && i > .01; i++) {
+        items15.push[i]
+      }
+      return items15;
   }
 
   expect( pricedBetween(items, 14, 18) ).to.deep.equal([
