@@ -260,3 +260,74 @@ var names = ["Eric", "Tee"];
 ## finding the length of the array
  
  names.length //2 
+
+## DOM
+
+DOM stands for Document Object Model
+
+The `DOM` explicitly describes a programming interface for HTML, XML and SVG documents. The DOM provides a structured representation of a document tree and it defines a way that the structure can be accessed from programs so that they can change the  document structure, style and content.
+
+A document object can be obtained from various APIs:
+
+`document` provides developers with a lot of functionality to maniuplate or extract things
+
+ Document object Methods
+
+  + `getElementById`  - will allow for a developer to select an element or dom node by id that is given to it in the HTML
+  +                  Example document.getElementById("
+  +  `getElementsByClassName` - will allow for a developer to select an element or dom node by it's class  that is given to 
+  +                             it in the HTML
+  +  `appendChild` -   will take the child element within it's parent and place it at the bottom of the node
+  +  `write` -  Writes a string of text to a document stream opened by document.open();
+  +  `writeIn` - Writes a string of text followed by a newline character to a document
+  + 
+
+Most commonly, you work with the document the script is running in by using document in document's scripts
+
+`window.document` returns a reference to the document contanied in the window
+
+`window.location` returns a location object that contains information about the current URL
+
+`window.history` returns a read-only property that only refers to the History object, which provides an interface for manipulating the browser session history
+
+`window.alert` (method) - displays an alert box with the optional specified content and an Ok button
+
+`window.confirm` (method) - displays a modal dialog with an optional message and two buttons, OK and cancel
+
+`window.reload` (method) - will allow for the page or that specific window to be renderred again
+
+`window.open` (method) -- will open up a new broswer window for the element or link that is an argument for the `window.open` function call
+
+
+
+
+
+`window.close` (method) 
+
+
+`HTMLElement` -- interfaces represents any HTML element
+
+### Properties
+
+ + `id` -- sets or returns the value of the id attribute of an element
+ + `classname` - sets or returns the value of the class attribute of an element
+ + `innerHTML` - sets or returns the content of an element
+ + `outerHTML` - sets or returns the content
+ + `children` - returns a collection of an element's child element (excluding text and comment nodes)
+ + `parent` - returns the parent node of an element
+ + `nextSibling` - returns the next node at the same node tree level
+ + `firstChild` - returns the first child node of an element
+ + 
+### Methods
+
+ + `addEventListener` - attaches an event handler to the specficied element
+ + `dispatchEvent`
+ + `Attribute` family - 
+ + 
+ `HTMLCollection`
+ + `nodeList` - represents a list of nodes, like an HTML element's collection of child nodes
+ ## The Difference
++ While a NodeList can contain any node type, an HTMLCollection is supposed to only contain Element nodes
++ An HTMLCollection provides the same methods as a NodeList and additionally a method called nameItem
+ 
+
