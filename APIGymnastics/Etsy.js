@@ -6,6 +6,7 @@ var test = require('mocha').it,
   expect = require('chai').expect;
 
 test('this is the easy one', function(){
+  expect(Array).to.exist;
   expect(Array.isArray(items)).to.be.true; // What.
 
   // see: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray
