@@ -1,0 +1,19 @@
+{
+  "name": "APIGymnastics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Etsy.js",
+  "scripts": {
+    "test": "mocha --bail"
+  },
+  "repository": {
+    "type": "git",
+    "url": "TIY-Assignments"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^3.2.0",
+    "mocha": "^2.3.2"
+  }
+}
