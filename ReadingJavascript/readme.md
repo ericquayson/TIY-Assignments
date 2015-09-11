@@ -393,13 +393,13 @@ Events
 
 	### Context situations for the change event
 
-* When the element is activated (by clicking or using the keyboard) for  <input type=”radio”> and <input type=”checkbox”>;
+* When the element is activated (by clicking or using the keyboard) for  `<input type=”radio”>` and `<input type=”checkbox”>`
 
-* When the user commits the change explicitly (e.g by selecting a value from a <select>’s dropdown with a mouse click, by selecting a date from a date picker for <input type=”date”>,  by selecting a file in the file picker for <input type=”file”>
-
+* When the user commits the change explicitly (e.g by selecting a value from a `<select>’s` dropdown with a mouse click, by selecting a date from a date picker for `<input type=”date”>`,  by selecting a file in the file picker for `<input type=”file”>`
 * When the element loses focus after its value was changed, but not committed (e.g after editing the value of <textarea> or <input type=”text”>)
 
-I have to be mindful for the browsers because sometimes they do not always agree whether a change event should be fired for certain types of interaction
++ I have to be mindful for the browsers because sometimes they do not always agree 
++ whether a change event should be fired for certain types of interaction
 
 ### Load and Unload events
 
