@@ -331,3 +331,93 @@ Most commonly, you work with the document the script is running in by using docu
 + An HTMLCollection provides the same methods as a NodeList and additionally a method called nameItem
  
 
+
+Event Bubbling 
+
+DOM elements can be nested inside each other. When the user clicks on the deepest possible child element , the parent element or node can be triggered as well. The event bubbling is the reason for the reaction. 
+
+There is concept called the `bubbling order` because an event bubbles from the innermost element up through parents, like a bubble of air in the water
+
+The deepest element is also called the target or the originating element
+
+Target is simply the element or node you want to work with specifically,
+
+Specifically, event bubbling will eventually bubble up to the top until it gets to the HTML tag. In order to stop this reaction of the onclick event is event.stopPropagation() or IE<9 event.cancelBubble = true
+
+Captures down will start from the topmost element then one move into next element down from it (the opposite of bubbling up)
+
+All handlers work on bubbling stage excepts addEventListener with last argument true, which is the only way to catch the event on capturing stage
+
+Event Methods
+
+Event.preventDefault() – cancels the event (if it is cancelable)
+
+Mouse events (sometimes are better to used than click events, but some browsers may not execute the code)
+
+Mousedown – user depresses the mouse button on the element
+
+Mouseup – user releases the mouse button on this element
+
+Dblclick – event is rarely used
+
+Form Events
+
+Events triggered by actions inside of a HTML form (applies to almost all HTML elements, but is most used in form elements)
+
+Events
+
+Onblur  - Fires he moment that the element loses focus
+
+Onchange – Fires the moment when the value of the element is changed
+
+Oncontextmenu – script to be run when a context menu is triggered
+
+Onfocus – fires the moment when the element gets focus
+
+Oninput – script to be run when an element gets user input
+
+Oninvalid – script to the run when an element is invalid
+
+Onreset – fires when the reset button in a form is clicked
+
+Onsubmit – fires when a form is submitted
+
+Scroll – fires when the user scrolls an element by any means (arrow keys, scrollbar or mouse wheel). You cannot prevent the scrolling.
+
+Mousewheel – fires when the user uses the mouse wheel. You can prevent this event’s default. Note that the page does not have to scroll in order to fire this event
+
+The change event is fired for <input>, <select>, and <textarea> elements when a change to the element’s value is committed by the user. Unlike the input event, the change event is not necessarily fired for each change to an element’s value
+
+	Context situations for the change event
+
+When the element is activated (by clicking or using the keyboard) for  <input type=”radio”> and <input type=”checkbox”>;
+
+When the user commits the change explicitly (e.g by selecting a value from a <select>’s dropdown with a mouse click, by selecting a date from a date picker for <input type=”date”>,  by selecting a file in the file picker for <input type=”file”>
+
+When the element loses focus after its value was changed, but not committed (e.g after editing the value of <textarea> or <input type=”text”>)
+
+I have to be mindful for the browsers because sometimes they do not always agree whether a change event should be fired for certain types of interaction
+
+Load and Unload events
+
+`onload` event happens when the window and it’s dependent resources,  including images, scripts, styles are loaded
+Attaching an `onload` handler allows to execute the code when all DOM elements are rendered and the whole document is complete
+
+`DOMContentLoaded` is another event that can be triggered just  like `onload` it triggers when the HTML page is parsed and DOM tree is built. Developers made this event because they noticed that visitors have to wait for all images, external counters to completely load for onload to fire
+
+The onunload event happens when a window is closed or changes it’s location 
+
+	The syntax is similar: window.onunload
+The `onbeforeunload` event is special, because it triggers before the window is closed or changes location
+
+Unlike unload, it can be used to cancel the change
+
+To do so, the handler should return the text. Before unloading the window, the browser will output the returned text and ask the user, if he really want to leave the page
+
+The event is useful, for example with working with documents. The web-application can check if the document is saved and ask the user if he really wants to leave without saving the job. 
+
+KeyboardEvent
+
+KeyboardEvent objects describe a user interaction with the keyboard. Each event describes a key; the event type (keydown, keypress, or keyup) identifies what kind of activity was performed
+
+
