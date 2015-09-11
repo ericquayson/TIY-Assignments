@@ -387,7 +387,9 @@ Events
 * `Mousewheel` – fires when the user uses the mouse wheel. You can prevent this event’s default. Note that the page does not have to scroll in order to fire this event
 
 ## Change Event
-  * The change event is fired for <input>, <select>, and <textarea> elements when a change to the element’s value is committed by the user. Unlike the input event, the change event is not necessarily fired for each change to an element’s value
++ The change event is fired for `<input>`, `<select>`, and `<textarea>` elements
+
++ when a change to the element’s value is committed by the user. Unlike the input + event, the change event is not necessarily fired for each change to an + element’s value
 
 	### Context situations for the change event
 
