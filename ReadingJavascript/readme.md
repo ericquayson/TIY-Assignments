@@ -350,15 +350,15 @@ All handlers work on bubbling stage excepts addEventListener with last argument 
 
 Event Methods
 
-`Event.preventDefault`() – cancels the event (if it is cancelable)
+* `Event.preventDefault`() – cancels the event (if it is cancelable)
 
-`Mouse events` (sometimes are better to used than click events, but some browsers may not execute the code)
+* `Mouse events` (sometimes are better to used than click events, but some browsers may not execute the code)
 
-`Mousedown` – user depresses the mouse button on the element
+* `Mousedown` – user depresses the mouse button on the element
 
-`Mouseup` – user releases the mouse button on this element
+* `Mouseup` – user releases the mouse button on this element
 
-`Dblclick` – event is rarely used
+* `Dblclick` – event is rarely used
 
 Form Events
 
@@ -366,25 +366,25 @@ Events triggered by actions inside of a HTML form (applies to almost all HTML el
 
 Events
 
-`Onblur`  - Fires he moment that the element loses focus
+* `Onblur`  - Fires he moment that the element loses focus
 
-`Onchange` – Fires the moment when the value of the element is changed
+* `Onchange` – Fires the moment when the value of the element is changed
 
-`Oncontextmenu` – script to be run when a context menu is triggered
+* `Oncontextmenu` – script to be run when a context menu is triggered
 
-`Onfocus` – fires the moment when the element gets focus
+* `Onfocus` – fires the moment when the element gets focus
 
-`Oninput` – script to be run when an element gets user input
+* `Oninput` – script to be run when an element gets user input
 
-`Oninvalid` – script to the run when an element is invalid
+* `Oninvalid` – script to the run when an element is invalid
 
-`Onreset` – fires when the reset button in a form is clicked
+* `Onreset` – fires when the reset button in a form is clicked
 
-`Onsubmit` – fires when a form is submitted
+* `Onsubmit` – fires when a form is submitted
 
-`Scroll` – fires when the user scrolls an element by any means (arrow keys, scrollbar or mouse wheel). You cannot prevent the scrolling.
+* `Scroll` – fires when the user scrolls an element by any means (arrow keys, scrollbar or mouse wheel). You cannot prevent the scrolling.
 
-`Mousewheel` – fires when the user uses the mouse wheel. You can prevent this event’s default. Note that the page does not have to scroll in order to fire this event
+* `Mousewheel` – fires when the user uses the mouse wheel. You can prevent this event’s default. Note that the page does not have to scroll in order to fire this event
 
 The change event is fired for <input>, <select>, and <textarea> elements when a change to the element’s value is committed by the user. Unlike the input event, the change event is not necessarily fired for each change to an element’s value
 
@@ -400,7 +400,7 @@ I have to be mindful for the browsers because sometimes they do not always agree
 
 Load and Unload events
 
-`onload` event happens when the window and it’s dependent resources,  including images, scripts, styles are loaded
+* `onload` event happens when the window and it’s dependent resources,  including images, scripts, styles are loaded
 Attaching an `onload` handler allows to execute the code when all DOM elements are rendered and the whole document is complete
 
 `DOMContentLoaded` is another event that can be triggered just  like `onload` it triggers when the HTML page is parsed and DOM tree is built. Developers made this event because they noticed that visitors have to wait for all images, external counters to completely load for onload to fire
