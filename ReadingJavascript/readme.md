@@ -265,13 +265,15 @@ var names = ["Eric", "Tee"];
 
 DOM stands for Document Object Model
 
-The `DOM` explicitly describes a programming interface for HTML, XML and SVG documents. The DOM provides a structured representation of a document tree and it defines a way that the structure can be accessed from programs so that they can change the  document structure, style and content.
+> The `DOM` explicitly describes a programming interface for HTML, XML and SVG documents.
+> The DOM provides a structured representation of a document tree and it defines a way that > the structure can be accessed from programs so that they can change the  document
+> structure, style and content.
 
-A document object can be obtained from various APIs:
+#### A document object can be obtained from various APIs:
 
 `document` provides developers with a lot of functionality to maniuplate or extract things
 
- Document object Methods
+ ### Document object Methods
 
   + `getElementById`  - will allow for a developer to select an element or dom node by id that is given to it in the HTML
   +                  Example document.getElementById("
