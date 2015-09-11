@@ -229,41 +229,41 @@ var names = ["Eric", "Tee"];
 
 ## Remove from the end of an Array
 
- var lastName = names.pop(); //removes Quan from the end
+ * var lastName = names.pop(); //removes Quan from the end
  // ["Eric", "Tee"]
 
 ## Remove from the front of an Array
 
- var lastLastName = names.shift(); // remove Eric from the front
+ * var lastLastName = names.shift(); // remove Eric from the front
  // ["Tee"]
 
 ## Add to the front of an Array
 
- var lasttName = names.unshift("Teach") // adds Teach to the front of the array
+ * var lasttName = names.unshift("Teach") // adds Teach to the front of the array
 
  // ["Teach", "Tee"]
 
  ## Find the index of an item in the Array
 
- names.push("Cecil");
+ * names.push("Cecil");
  // ["Teach", "Tee", "Cecil"]
 
- var pos = names.indexOf("Tee");
+ * var pos = names.indexOf("Tee");
  // 1
 
  ## Remove an item by Index Position
 
- var removedItem = names.splice(pos, 1); // this is how to remove an element
+ * var removedItem = names.splice(pos, 1); // this is how to remove an element
  // ["Teach", "Cecil"]
 
 
 ## finding the length of the array
 
- names.length //2
+ * names.length //2
 
 ## DOM
 
-DOM stands for Document Object Model
+### DOM stands for Document Object Model
 
 > The `DOM` explicitly describes a programming interface for HTML, XML and SVG documents.
 > The DOM provides a structured representation of a document tree and it defines a way that > the structure can be accessed from programs so that they can change the  document
@@ -329,7 +329,7 @@ Most commonly, you work with the document the script is running in by using docu
  `HTMLCollection`
  + `nodeList` - represents a list of nodes, like an HTML element's collection of child nodes
  ## The Difference
-+ While a NodeList can contain any node type, an HTMLCollection is supposed to only contain Element nodes
++ While a NodeList can contain any node type, an HTMLCollection is supposed to only contain      Element nodes
 + An HTMLCollection provides the same methods as a NodeList and additionally a method called nameItem
 
 
