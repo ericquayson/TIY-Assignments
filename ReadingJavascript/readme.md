@@ -1,6 +1,6 @@
 # About JavaScript
 ===================
-> JavaScript is a programming language that allows the user to add functionality to their web application or website.          JavaScript comes equip with powerful tools that allow for the developer to listen for events, store data, create clean and concise code. 
+> JavaScript is a programming language that allows the user to add functionality to their web application or website.          JavaScript comes equip with powerful tools that allow for the developer to listen for events, store data, create clean and concise code.
 
 ### Basic JavaScript
 ===================
@@ -23,15 +23,15 @@ returns 2
 
 operator - +=
 
-multiple 
+multiple
 
-2 * 3 
+2 * 3
 
 returns 6
 
 operator - *=
- 
-divide 
+
+divide
 
 5 / 2
 
@@ -39,7 +39,7 @@ return 2.5
 
 operator - /=
 
-subtract 
+subtract
 
  1 - 1
 
@@ -77,18 +77,18 @@ NaN - Not a Number
 
 Undefined - indicates that a variable is not defined before being called
 
-Infinity - 
+Infinity -
 
 
-Variables declared within Javascript can be known as Identifiers 
+Variables declared within Javascript can be known as Identifiers
 = allows you to assign a value to an identifiers
-delimitiers = " " or ' ' or , 
+delimitiers = " " or ' ' or ,
 
-Example of a 'bear' word = var foo = foo; 
+Example of a 'bear' word = var foo = foo;
 
 + -- catenation -- specifically, refer to strings and "smashingthemtogether"
 
-semicolon - is a statement operator 
+semicolon - is a statement operator
 
 Sometimes Javascript can be read from left to right or right to left (depending on hierarchy of the operations)
 
@@ -96,11 +96,11 @@ function identifier () {}; -- the function definition
 
 To invoke a function     ____();
                       function name
-  
-  weirdos operators: . () 
-  
+
+  weirdos operators: . ()
+
   comparsion  operators: === (this means a strict comparsion which is best practice)
-                      
+
   console.log -- is an unanimous function
 
 ## Functions
@@ -121,12 +121,12 @@ function hello (name) {
  console.log("My name is " + " ")
 // the function innovocation
 } hello(eric);
-Once a function has been defined, it can be _invoked_ by... 
-functionName(); 
+Once a function has been defined, it can be _invoked_ by...
+functionName();
 
 ### `typeof` keyword
 
-The `typeof` keyword function determines which of the 4 primitive types that element could be 
+The `typeof` keyword function determines which of the 4 primitive types that element could be
 
 However, beyond the four primitive types, `typeof` can tell you if the element `undefined` or `null` are objects
 
@@ -149,7 +149,7 @@ If statement executes a statement if a specified condition is true. If the condi
 
 //if statement defition
 if (true) {
-  
+
 }
 
 Multiple If statements
@@ -163,9 +163,9 @@ else if (condition3)
 ...
 else
    statementN
-   
+
    +There are multiple variations of what If statements can consist of
-   
+
    if (condition1)
    statement1
 else
@@ -175,15 +175,15 @@ else
       if (condition3)
 ...
 
-While statements creates a loop that executes a specficied statement as long as the test condition `eval` to true. 
+While statements creates a loop that executes a specficied statement as long as the test condition `eval` to true.
 
 while (condition) {
   statement
 }
 
-do While statement creates a loop that executes a specified statement until the test condition evaluates to false. The condition is evaluated after executing the statement, resulting in the specified statement executing at least once. 
+do While statement creates a loop that executes a specified statement until the test condition evaluates to false. The condition is evaluated after executing the statement, resulting in the specified statement executing at least once.
 
-#### Example 
+#### Example
 
 do
    statement
@@ -207,9 +207,9 @@ switch (expression) {
     [break;]
 }
 
-### Array 
+### Array
 
->  An Array object is a global object that is used in the construction of arrays; which are high-level, list-like objects. 
+>  An Array object is a global object that is used in the construction of arrays; which are high-level, list-like objects.
 >  Create an Array
 
 var names = ["Eric", "Tee"];
@@ -217,49 +217,49 @@ var names = ["Eric", "Tee"];
 ## Array come equipped with a lot of functionality
 
  ##Methods
- 
+
  + push
- 
+
 ## Adds to the end of an Array
- 
+
  var newNames = names.push("Quan");
  // ["Eric", "Tee", "Quan"]
- 
+
  + pop
- 
+
 ## Remove from the end of an Array
- 
+
  var lastName = names.pop(); //removes Quan from the end
  // ["Eric", "Tee"]
- 
+
 ## Remove from the front of an Array
- 
+
  var lastLastName = names.shift(); // remove Eric from the front
  // ["Tee"]
- 
+
 ## Add to the front of an Array
- 
+
  var lasttName = names.unshift("Teach") // adds Teach to the front of the array
- 
+
  // ["Teach", "Tee"]
- 
+
  ## Find the index of an item in the Array
- 
+
  names.push("Cecil");
  // ["Teach", "Tee", "Cecil"]
- 
+
  var pos = names.indexOf("Tee");
  // 1
- 
+
  ## Remove an item by Index Position
- 
- var removedItem = names.splice(pos, 1); // this is how to remove an element 
+
+ var removedItem = names.splice(pos, 1); // this is how to remove an element
  // ["Teach", "Cecil"]
- 
- 
+
+
 ## finding the length of the array
- 
- names.length //2 
+
+ names.length //2
 
 ## DOM
 
@@ -275,12 +275,12 @@ A document object can be obtained from various APIs:
 
   + `getElementById`  - will allow for a developer to select an element or dom node by id that is given to it in the HTML
   +                  Example document.getElementById("
-  +  `getElementsByClassName` - will allow for a developer to select an element or dom node by it's class  that is given to 
+  +  `getElementsByClassName` - will allow for a developer to select an element or dom node by it's class  that is given to
   +                             it in the HTML
   +  `appendChild` -   will take the child element within it's parent and place it at the bottom of the node
   +  `write` -  Writes a string of text to a document stream opened by document.open();
   +  `writeIn` - Writes a string of text followed by a newline character to a document
-  + 
+  +
 
 Most commonly, you work with the document the script is running in by using document in document's scripts
 
@@ -302,7 +302,7 @@ Most commonly, you work with the document the script is running in by using docu
 
 
 
-`window.close` (method) 
+`window.close` (method)
 
 
 `HTMLElement` -- interfaces represents any HTML element
@@ -317,24 +317,24 @@ Most commonly, you work with the document the script is running in by using docu
  + `parent` - returns the parent node of an element
  + `nextSibling` - returns the next node at the same node tree level
  + `firstChild` - returns the first child node of an element
- + 
+ +
 ### Methods
 
  + `addEventListener` - attaches an event handler to the specficied element
  + `dispatchEvent`
- + `Attribute` family - 
- + 
+ + `Attribute` family -
+ +
  `HTMLCollection`
  + `nodeList` - represents a list of nodes, like an HTML element's collection of child nodes
  ## The Difference
 + While a NodeList can contain any node type, an HTMLCollection is supposed to only contain Element nodes
 + An HTMLCollection provides the same methods as a NodeList and additionally a method called nameItem
- 
 
 
-Event Bubbling 
 
-DOM elements can be nested inside each other. When the user clicks on the deepest possible child element , the parent element or node can be triggered as well. The event bubbling is the reason for the reaction. 
+Event Bubbling
+
+DOM elements can be nested inside each other. When the user clicks on the deepest possible child element , the parent element or node can be triggered as well. The event bubbling is the reason for the reaction.
 
 There is concept called the `bubbling order` because an event bubbles from the innermost element up through parents, like a bubble of air in the water
 
@@ -350,15 +350,15 @@ All handlers work on bubbling stage excepts addEventListener with last argument 
 
 Event Methods
 
-Event.preventDefault() – cancels the event (if it is cancelable)
+`Event.preventDefault`() – cancels the event (if it is cancelable)
 
-Mouse events (sometimes are better to used than click events, but some browsers may not execute the code)
+`Mouse events` (sometimes are better to used than click events, but some browsers may not execute the code)
 
-Mousedown – user depresses the mouse button on the element
+`Mousedown` – user depresses the mouse button on the element
 
-Mouseup – user releases the mouse button on this element
+`Mouseup` – user releases the mouse button on this element
 
-Dblclick – event is rarely used
+`Dblclick` – event is rarely used
 
 Form Events
 
@@ -366,25 +366,25 @@ Events triggered by actions inside of a HTML form (applies to almost all HTML el
 
 Events
 
-Onblur  - Fires he moment that the element loses focus
+`Onblur`  - Fires he moment that the element loses focus
 
-Onchange – Fires the moment when the value of the element is changed
+`Onchange` – Fires the moment when the value of the element is changed
 
-Oncontextmenu – script to be run when a context menu is triggered
+`Oncontextmenu` – script to be run when a context menu is triggered
 
-Onfocus – fires the moment when the element gets focus
+`Onfocus` – fires the moment when the element gets focus
 
-Oninput – script to be run when an element gets user input
+`Oninput` – script to be run when an element gets user input
 
-Oninvalid – script to the run when an element is invalid
+`Oninvalid` – script to the run when an element is invalid
 
-Onreset – fires when the reset button in a form is clicked
+`Onreset` – fires when the reset button in a form is clicked
 
-Onsubmit – fires when a form is submitted
+`Onsubmit` – fires when a form is submitted
 
-Scroll – fires when the user scrolls an element by any means (arrow keys, scrollbar or mouse wheel). You cannot prevent the scrolling.
+`Scroll` – fires when the user scrolls an element by any means (arrow keys, scrollbar or mouse wheel). You cannot prevent the scrolling.
 
-Mousewheel – fires when the user uses the mouse wheel. You can prevent this event’s default. Note that the page does not have to scroll in order to fire this event
+`Mousewheel` – fires when the user uses the mouse wheel. You can prevent this event’s default. Note that the page does not have to scroll in order to fire this event
 
 The change event is fired for <input>, <select>, and <textarea> elements when a change to the element’s value is committed by the user. Unlike the input event, the change event is not necessarily fired for each change to an element’s value
 
@@ -405,7 +405,7 @@ Attaching an `onload` handler allows to execute the code when all DOM elements a
 
 `DOMContentLoaded` is another event that can be triggered just  like `onload` it triggers when the HTML page is parsed and DOM tree is built. Developers made this event because they noticed that visitors have to wait for all images, external counters to completely load for onload to fire
 
-The onunload event happens when a window is closed or changes it’s location 
+The onunload event happens when a window is closed or changes it’s location
 
 	The syntax is similar: window.onunload
 The `onbeforeunload` event is special, because it triggers before the window is closed or changes location
@@ -414,10 +414,8 @@ Unlike unload, it can be used to cancel the change
 
 To do so, the handler should return the text. Before unloading the window, the browser will output the returned text and ask the user, if he really want to leave the page
 
-The event is useful, for example with working with documents. The web-application can check if the document is saved and ask the user if he really wants to leave without saving the job. 
+The event is useful, for example with working with documents. The web-application can check if the document is saved and ask the user if he really wants to leave without saving the job.
 
 KeyboardEvent
 
 KeyboardEvent objects describe a user interaction with the keyboard. Each event describes a key; the event type (keydown, keypress, or keyup) identifies what kind of activity was performed
-
-
