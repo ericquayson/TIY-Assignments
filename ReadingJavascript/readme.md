@@ -152,7 +152,7 @@ if (true) {
 
 }
 
-Multiple If statements
+### Multiple If statements
 
 if (condition1)
    statement1
@@ -332,23 +332,25 @@ Most commonly, you work with the document the script is running in by using docu
 
 
 
-Event Bubbling
+## Event Bubbling
 
-DOM elements can be nested inside each other. When the user clicks on the deepest possible child element , the parent element or node can be triggered as well. The event bubbling is the reason for the reaction.
+> DOM elements can be nested inside each other. When the user clicks on the deepest
+> possible child element , the parent element or node can be triggered as well. The event > bubbling is the reason for the reaction.
 
-There is concept called the `bubbling order` because an event bubbles from the innermost element up through parents, like a bubble of air in the water
++ There is concept called the `bubbling order` because an event bubbles from the
++ innermost element up through parents, like a bubble of air in the water
 
-The deepest element is also called the target or the originating element
++ The deepest element is also called the target or the originating element
 
-Target is simply the element or node you want to work with specifically,
++ Target is simply the element or node you want to work with specifically,
 
-Specifically, event bubbling will eventually bubble up to the top until it gets to the HTML tag. In order to stop this reaction of the onclick event is event.stopPropagation() or IE<9 event.cancelBubble = true
++ Specifically, event bubbling will eventually bubble up to the top until it gets to the HTML tag. In order to stop this reaction of the onclick event is event.stopPropagation() or IE<9 event.cancelBubble = true
 
 Captures down will start from the topmost element then one move into next element down from it (the opposite of bubbling up)
 
 All handlers work on bubbling stage excepts addEventListener with last argument true, which is the only way to catch the event on capturing stage
 
-Event Methods
+### Event Methods
 
 * `Event.preventDefault`() – cancels the event (if it is cancelable)
 
@@ -391,14 +393,14 @@ Events
 
 + when a change to the element’s value is committed by the user. Unlike the input + event, the change event is not necessarily fired for each change to an + element’s value
 
-	### Context situations for the change event
+	## Context situations for the change event
 
 * When the element is activated (by clicking or using the keyboard) for  `<input type=”radio”>` and `<input type=”checkbox”>`
 
 * When the user commits the change explicitly (e.g by selecting a value from a `<select>’s` dropdown with a mouse click, by selecting a date from a date picker for `<input type=”date”>`,  by selecting a file in the file picker for `<input type=”file”>`
-* When the element loses focus after its value was changed, but not committed (e.g after editing the value of <textarea> or <input type=”text”>)
+* When the element loses focus after its value was changed, but not committed (e.g after editing the value of `<textarea>` or `<input type=”text”>`)
 
-+ I have to be mindful for the browsers because sometimes they do not always agree 
++ I have to be mindful for the browsers because sometimes they do not always agree
 + whether a change event should be fired for certain types of interaction
 
 ### Load and Unload events
@@ -410,8 +412,8 @@ Attaching an `onload` handler allows to execute the code when all DOM elements a
 
 + The onunload event happens when a window is closed or changes it’s location
 
-	The syntax is similar: window.onunload
-The `onbeforeunload` event is special, because it triggers before the window is closed or changes location
++ The syntax is similar: window.onunload
++ The `onbeforeunload` event is special, because it triggers before the window is closed + or changes location
 
 + Unlike unload, it can be used to cancel the change
 
