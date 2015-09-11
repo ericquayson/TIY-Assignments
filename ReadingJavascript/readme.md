@@ -362,7 +362,7 @@ All handlers work on bubbling stage excepts addEventListener with last argument 
 
 * `Dblclick` – event is rarely used
 
-Form Events
+## Form Events
 
 Events triggered by actions inside of a HTML form (applies to almost all HTML elements, but is most used in form elements)
 
