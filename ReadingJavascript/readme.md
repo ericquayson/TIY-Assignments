@@ -386,19 +386,19 @@ Events
 
 * `Mousewheel` – fires when the user uses the mouse wheel. You can prevent this event’s default. Note that the page does not have to scroll in order to fire this event
 
-The change event is fired for <input>, <select>, and <textarea> elements when a change to the element’s value is committed by the user. Unlike the input event, the change event is not necessarily fired for each change to an element’s value
++ The change event is fired for <input>, <select>, and <textarea> elements when a + change to the element’s value is committed by the user. Unlike the input event, + the change event is not necessarily fired for each change to an element’s value
 
-	Context situations for the change event
+	### Context situations for the change event
 
-When the element is activated (by clicking or using the keyboard) for  <input type=”radio”> and <input type=”checkbox”>;
+* When the element is activated (by clicking or using the keyboard) for  <input type=”radio”> and <input type=”checkbox”>;
 
-When the user commits the change explicitly (e.g by selecting a value from a <select>’s dropdown with a mouse click, by selecting a date from a date picker for <input type=”date”>,  by selecting a file in the file picker for <input type=”file”>
+* When the user commits the change explicitly (e.g by selecting a value from a <select>’s dropdown with a mouse click, by selecting a date from a date picker for <input type=”date”>,  by selecting a file in the file picker for <input type=”file”>
 
-When the element loses focus after its value was changed, but not committed (e.g after editing the value of <textarea> or <input type=”text”>)
+* When the element loses focus after its value was changed, but not committed (e.g after editing the value of <textarea> or <input type=”text”>)
 
 I have to be mindful for the browsers because sometimes they do not always agree whether a change event should be fired for certain types of interaction
 
-Load and Unload events
+### Load and Unload events
 
 * `onload` event happens when the window and it’s dependent resources,  including images, scripts, styles are loaded
 Attaching an `onload` handler allows to execute the code when all DOM elements are rendered and the whole document is complete
