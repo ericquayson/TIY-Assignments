@@ -252,7 +252,9 @@ var names = ["Eric", "Tee"];
  * var pos = names.indexOf("Tee");
  // 1
 
- ## Remove an item by Index Position
+ ## Changes the content of an array by removing existing elements and/or adding new elements
+
+// the splice method takes two different parameters the start and deleteCount
 
  * var removedItem = names.splice(pos, 1); // this is how to remove an element
  // ["Teach", "Cecil"]
