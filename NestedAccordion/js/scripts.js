@@ -7,13 +7,25 @@
  *   - When I click the heading with text visible (open accordion);
  *   - the `<li class="cbp-ntopen">` that contains the headig I click turns into `<li>`
 */
-
+//need to add click events (addEventListener)
 
 var heading = document.querySelector('.cbp-nttrigger');
 
- function tracer () {
-   console.log('tracer bullet!');
- }
+$(document).ready(function () {
+  $('.cbp-nttrigger').click(Function () {
+    $('.cbp-ntcontent').show();
+  })
+
+})
+
+
+
+ // function open () {
+  //  if (true) {
+
+  //  }
+  //  console.log('');
+ // }
 
  heading.addEventListener('click', tracer);
  // two differnt options of defining and using the function once the user has
