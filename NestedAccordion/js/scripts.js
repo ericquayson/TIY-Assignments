@@ -9,18 +9,7 @@
 */
 //need to add click events (addEventListener)
 
-// // *** this part will accrodion the first section ***
-//   var header3 = document.querySelector(".cbp-nttrigger");  //grabs first header with '.cbp-nttrigger' class
-//   var elem = document.getElementsByTagName("li"); //grabs all <li> elements
-//
-//   //adding an event lister to the first <h3> element and opening/closing it
-//   header3.addEventListener('click', function(){
-//     //console.log("clicking"); // tracer bullet...pew pew
-//     //elem[0].classList.add("cbp-ntopen"); //opens the first <li> element
-//     //elem[0].classList.remove("cbp-ntopen"); //closes the first <li> element
-//     elem[0].classList.toggle("cbp-ntopen"); //toggles the class of the first <li> element to
-//       //open it if it's closed, and close it if it's open
-//   });
+/
 
 // this piece of code grabs all of the h3 nodes on the DOM
 var headingAll = document.querySelector('cbp-nttrigger');
