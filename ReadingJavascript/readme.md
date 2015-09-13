@@ -257,7 +257,15 @@ var names = ["Eric", "Tee"];
 // the splice method takes two different parameters the start and deleteCount
 
  * var removedItem = names.splice(pos, 1); // this is how to remove an element
- // ["Teach", "Cecil"]
+
+// var randomItems = ["Teach", "Cecil", "Bill"]
+// var removedRandomItem = randomItems.splice(2, 0, "Word");
+
+// The code above reads the array randomItems has the method splice attached +
+// and will start the method at the position 2 in the array and then remove 0 elements +
+// but will insert the element Word in that position
+
+ // ["Teach", "Cecil", "Bill", "Word"]
 
 
 ## finding the length of the array
