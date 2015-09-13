@@ -227,12 +227,12 @@ var names = ["Eric", "Tee"];
 
  + pop
 
-## Remove from the end of an Array
+## Removes the last element from the Array and returns that element
 
  * var lastName = names.pop(); //removes Quan from the end
  // ["Eric", "Tee"]
 
-## Remove from the front of an Array
+## Removes the first element from the front of an Array and returns that element
 
  * var lastLastName = names.shift(); // remove Eric from the front
  // ["Tee"]
@@ -246,6 +246,7 @@ var names = ["Eric", "Tee"];
  ## Find the index of an item in the Array
 
  * names.push("Cecil");
+ // push adds an element to the end of an Array
  // ["Teach", "Tee", "Cecil"]
 
  * var pos = names.indexOf("Tee");
