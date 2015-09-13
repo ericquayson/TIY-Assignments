@@ -11,12 +11,11 @@
 
 var heading = document.querySelector('.cbp-nttrigger');
 
-$(document).ready(function () {
-  $('.cbp-nttrigger').click(Function () {
-    $('.cbp-ntcontent').show();
-  })
 
-})
+  $('.cbp-nttrigger').click(function () {
+    $('.cbp-ntcontent').show();
+  });
+    //alert($(this).text());
 
 
 
@@ -27,7 +26,7 @@ $(document).ready(function () {
   //  console.log('');
  // }
 
- heading.addEventListener('click', tracer);
+ //heading.addEventListener('click', tracer);
  // two differnt options of defining and using the function once the user has
  // clicked on the header
 
