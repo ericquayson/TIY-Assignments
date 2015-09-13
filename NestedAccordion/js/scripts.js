@@ -9,13 +9,41 @@
 */
 //need to add click events (addEventListener)
 
-var heading = document.querySelector('.cbp-nttrigger');
+// // *** this part will accrodion the first section ***
+//   var header3 = document.querySelector(".cbp-nttrigger");  //grabs first header with '.cbp-nttrigger' class
+//   var elem = document.getElementsByTagName("li"); //grabs all <li> elements
+//
+//   //adding an event lister to the first <h3> element and opening/closing it
+//   header3.addEventListener('click', function(){
+//     //console.log("clicking"); // tracer bullet...pew pew
+//     //elem[0].classList.add("cbp-ntopen"); //opens the first <li> element
+//     //elem[0].classList.remove("cbp-ntopen"); //closes the first <li> element
+//     elem[0].classList.toggle("cbp-ntopen"); //toggles the class of the first <li> element to
+//       //open it if it's closed, and close it if it's open
+//   });
 
- $(function () {
-   $('.cbp-nttrigger').click(function () {
-     $('.cbp-ntopen').show();
-   });
- });
+// this piece of code grabs all of the h3 nodes on the DOM
+var headingAll = document.querySelector('cbp-nttrigger');
+// this peice of code grabs all of the li nodes on the DOM
+var listItem = document.getElementsByTagName('li');
+
+function open () {
+
+  headingALL.addEventListener('click', function () {
+    console.log('clicking');
+      listItem[0].classList.add('cbp-ntopen');
+      listItem[0].classList.remove('cbp-ntopen');
+  });
+
+}
+
+// Me attempting to use jquery
+ //$(function () {
+ //   $('h3.cbp-nttrigger').click(function () {
+ //     $('ul.cbp-ntaccordion > li').toggle();
+ //   });
+ // });
+
 
     //alert($(this).text());
 
