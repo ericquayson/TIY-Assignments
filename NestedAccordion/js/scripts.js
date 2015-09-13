@@ -11,11 +11,14 @@
 
 var heading = document.querySelector('.cbp-nttrigger');
 
+ $(function () {
+   $('.cbp-nttrigger').click(function () {
+     $('.cbp-ntcontent').show();
+   });
+ });
 
-  $('.cbp-nttrigger').click(function () {
-    $('.cbp-ntcontent').show();
-  });
     //alert($(this).text());
+
 
 
 
