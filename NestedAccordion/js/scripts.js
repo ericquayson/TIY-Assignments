@@ -7,9 +7,7 @@
  *   - When I click the heading with text visible (open accordion);
  *   - the `<li class="cbp-ntopen">` that contains the heading I click turns into `<li>`
 */
-//need to add click events (addEventListener)
 
-/
 
 // this piece of code grabs all of the h3 nodes on the DOM
 var headingAll = document.querySelector('cbp-nttrigger');
