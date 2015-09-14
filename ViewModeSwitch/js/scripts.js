@@ -27,7 +27,7 @@ var grid = document.querySelector("a.cbp-vm-icon.cbp-vm-list");
 
 
 //this will render the listView once the user is on the page
-list.addEventListener('click', function (listViewButton) {
+listViewButton.addEventListener('click', function (event) {
   var selectedViewButton = listViewButton.currentTarget;
   viewButtons.className = "cbp-vm-switcher cbp-vm-view-list";
   list.className = "cbp-vm-icon cbp-vm-list cbp-vm-selected";
@@ -35,7 +35,7 @@ list.addEventListener('click', function (listViewButton) {
 });
 
 //this will render the gridView once the user clicks on this button
-grid.addEventListener('click', function (gridViewButton) {
+gridViewButton.addEventListener('click', function (event) {
   var selectedViewButton = grid.currentTarget;
   viewButtons.className = "cbp-vm-switcher cbp-vm-view-grid";
   grid.className = "cbp-vm-icon cbp-vm-grid cbp-vm-selected";
