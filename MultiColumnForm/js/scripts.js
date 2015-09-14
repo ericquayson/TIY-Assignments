@@ -38,7 +38,19 @@ var clickEvent = function (Event) {
     weapons.value,
     comments.value
   ];
-  console.log(storeDate);
+  // In the function you create to that will capture that css selector, you have to make sure that you +
+  // you have to add an EventListener that hears the click event and calls back a function +
+  // that will use the event as a parameter however you want to stop the default behavior from happeningin +
+  // i.e event.preventDefault
+  // sample code document.querySelector('a[href]').addEventListener('click', function(event) {
+  //  event.preventDefault();
+  //  console.log(event);
+  // });
+  // document.
+  // addEventListener('click', function (event) {
+  //   event.preventDefault();
+  // })
+  // console.log(storeDate);
 };
 
 firstName.addEventListener('input', clickEvent);
