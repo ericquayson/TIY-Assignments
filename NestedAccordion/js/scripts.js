@@ -6,23 +6,80 @@
  * The `<li>` that contains the heading I click turns into `<li class='cbp-ntopen">`
  *   - When I click the heading with text visible (open accordion);
  *   - the `<li class="cbp-ntopen">` that contains the heading I click turns into `<li>`
+ * I've been trying several ways to get my code to work but it would not work for me
 */
+// var clickEvent = function(click) {
+//
+//   var liItem = eventObject.currentTarget.parentElement;
+//   if (liItem.className === "cbp-ntopen") {
+//     liItem === null;
+//   } else {
+//     liItem.className = "cbp-ntopen";
+//   }
+//   return true;
+// }
+ //
+ // this first ieration is supposed to select the intial header, +
+ //  give it an addEventListener and assign a className to it
+
+// I tried a lot of different solutions and was still having trouble with getting +
+// it to work
 
 
-// this piece of code grabs all of the h3 nodes on the DOM
-var headingAll = document.querySelector('cbp-nttrigger');
-// this peice of code grabs all of the li nodes on the DOM
-var listItem = document.getElementsByTagName('li');
+// selects oat cake
+var headings = document.querySelector("h3.cbp-nttrigger");
 
-function open () {
+for (var i = 0; i < headings.length; i++) {
+  headings[i].addEventListener('click', clickEvent);
+    var mainElement = this.mainElement;
+    if (mainElement.className !== "cbp-ntopen") {
+      mainElement.className = "cbp-ntopen";
+    } else {
+      mainElement.className = "";
+    }
+  };
 
-  headingALL.addEventListener('click', function () {
-    console.log('clicking');
-      listItem[0].classList.add('cbp-ntopen');
-      listItem[0].classList.remove('cbp-ntopen');
-  });
+// selects cream gummi bears
+headings[1].addEventListener('click', clickEvent);
+    var mainElement = this.mainElement;
+    if (mainElement.className !== "cbp-ntopen") {
+      mainElement.className = "cbp-ntopen";
+    } else {
+      mainElement.className = "";
+    }
+// selects Jelly marzipan sugar
+headings[2].addEventListener('click', clickEvent);
+    var mainElement = this.mainElement;
+    if (mainElement.className !== "cbp-ntopen") {
+      mainElement.className = "cbp-ntopen";
+    } else {
+      mainElement.className = "";
+    }
+// selects danish souffle
+headings[3].addEventListener('click', clickEvent);
+    var mainElement = this.mainElement;
+    if (mainElement.className !== "cbp-ntopen") {
+      mainElement.className = "cbp-ntopen";
+    } else {
+      mainElement.className = "";
+    }
 
-}
+// // this piece of code grabs all of the h3 nodes on the DOM
+// var headingAll = document.querySelector('h3.cbp-nttrigger');
+// // this peice of code grabs all of the li nodes on the DOM
+// var listItem = document.querySelector('li.cbp-ntopen');
+// console.log("working " + listItem[0]);
+//
+  // headingAll[0].addEventListener('click', function () {
+  //   if (document.querySelector("li").className == "cbp-ntopen") {
+  //     document.querySelector("li").className = "";
+  //   } else {
+  //     document.querySelector("li").className = "cbp-ntopen";
+  //   }}
+  // );
+
+
+
 
 // Me attempting to use jquery
  //$(function () {
