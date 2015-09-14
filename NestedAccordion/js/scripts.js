@@ -24,45 +24,46 @@
 
 // I tried a lot of different solutions and was still having trouble with getting +
 // it to work
+// function
+function clickAction(eventObject) {
 
 
+}
 // selects oat cake
-var headings = document.querySelector("h3.cbp-nttrigger");
+var headings = document.querySelector(".cbp-nttrigger");
 
 for (var i = 0; i < headings.length; i++) {
-  headings[i].addEventListener('click', clickEvent);
-    var mainElement = this.mainElement;
-    if (mainElement.className !== "cbp-ntopen") {
+    if (headings.className !== "cbp-ntopen") {
       mainElement.className = "cbp-ntopen";
     } else {
       mainElement.className = "";
     }
   };
 
-// selects cream gummi bears
-headings[1].addEventListener('click', clickEvent);
-    var mainElement = this.mainElement;
-    if (mainElement.className !== "cbp-ntopen") {
-      mainElement.className = "cbp-ntopen";
-    } else {
-      mainElement.className = "";
-    }
-// selects Jelly marzipan sugar
-headings[2].addEventListener('click', clickEvent);
-    var mainElement = this.mainElement;
-    if (mainElement.className !== "cbp-ntopen") {
-      mainElement.className = "cbp-ntopen";
-    } else {
-      mainElement.className = "";
-    }
-// selects danish souffle
-headings[3].addEventListener('click', clickEvent);
-    var mainElement = this.mainElement;
-    if (mainElement.className !== "cbp-ntopen") {
-      mainElement.className = "cbp-ntopen";
-    } else {
-      mainElement.className = "";
-    }
+// // selects cream gummi bears
+// headings[1].addEventListener('click', clickEvent);
+//     var mainElement = this.mainElement;
+//     if (mainElement.className !== "cbp-ntopen") {
+//       mainElement.className = "cbp-ntopen";
+//     } else {
+//       mainElement.className = "";
+//     }
+// // selects Jelly marzipan sugar
+// headings[2].addEventListener('click', clickEvent);
+//     var mainElement = this.mainElement;
+//     if (mainElement.className !== "cbp-ntopen") {
+//       mainElement.className = "cbp-ntopen";
+//     } else {
+//       mainElement.className = "";
+//     }
+// // selects danish souffle
+// headings[3].addEventListener('click', clickEvent);
+//     var mainElement = this.mainElement;
+//     if (mainElement.className !== "cbp-ntopen") {
+//       mainElement.className = "cbp-ntopen";
+//     } else {
+//       mainElement.className = "";
+//     }
 
 // // this piece of code grabs all of the h3 nodes on the DOM
 // var headingAll = document.querySelector('h3.cbp-nttrigger');
