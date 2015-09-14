@@ -15,71 +15,91 @@
 
 ## Arithmetic
 
-addition
++ addition
 
-1 + 1
++ 1 + 1
 
-returns 2
++ returns 2
 
-operator - +=
++ operator - +=
 
+<<<<<<< HEAD
 multiple
 
 2 * 3
+=======
++ multiple
 
-returns 6
++ 2 * 3
+>>>>>>> master
 
++ returns 6
+
+<<<<<<< HEAD
 operator - *=
 
 divide
+=======
++ operator - *=
+>>>>>>> master
 
-5 / 2
++ divide
 
-return 2.5
++ 5 / 2
 
-operator - /=
++ return 2.5
 
+<<<<<<< HEAD
 subtract
+=======
++ operator - /=
+>>>>>>> master
 
- 1 - 1
++ subtract
 
-returns 0
++ 1 - 1
 
-operator - -=
++ returns 0
 
-Comparison
++ operator - -=
 
-6 == 6
++ Comparison
 
-true
++ 6 == 6
 
-6 === 7
++ true
 
-false
++ 6 === 7
 
-6 > 4
++ false
 
-true
++ 6 > 4
 
-5 < 10
++ true
 
-false
++ 5 < 10
 
-6 != 1
++ false
 
-true
++ 6 != 1
 
-1 !== 2
++ true
 
-true
++ 1 !== 2
 
-NaN - Not a Number
++ true
 
-Undefined - indicates that a variable is not defined before being called
++ NaN - Not a Number
 
+<<<<<<< HEAD
 Infinity -
+=======
++ Undefined - indicates that a variable is not defined before being called
+>>>>>>> master
 
++ Infinity -
 
+<<<<<<< HEAD
 Variables declared within Javascript can be known as Identifiers
 = allows you to assign a value to an identifiers
 delimitiers = " " or ' ' or ,
@@ -89,32 +109,53 @@ Example of a 'bear' word = var foo = foo;
 + -- catenation -- specifically, refer to strings and "smashingthemtogether"
 
 semicolon - is a statement operator
+=======
 
-Sometimes Javascript can be read from left to right or right to left (depending on hierarchy of the operations)
++ Variables declared within Javascript can be known as Identifiers
++ = allows you to assign a value to an identifiers
++ delimitiers = " " or ' ' or ,
 
-function identifier () {}; -- the function definition
++ Example of a 'bear' word = var foo = foo;
 
-To invoke a function     ____();
++ -- catenation -- specifically, refer to strings and "smashingthemtogether"
+
++ semicolon - is a statement operator
+>>>>>>> master
+
++ Sometimes Javascript can be read from left to right or right to left (depending on hierarchy of the operations)
+
++ function identifier () {}; -- the function definition
+
++ To invoke a function     ____();
                       function name
 
+<<<<<<< HEAD
   weirdos operators: . ()
 
   comparsion  operators: === (this means a strict comparsion which is best practice)
 
   console.log -- is an unanimous function
+=======
+ + weirdos operators: . ()
+
+ + comparsion  operators: === (this means a strict comparsion which is best practice)
+
+  + console.log -- is an unanimous function
+>>>>>>> master
 
 ## Functions
 
-Functions are a form of [control flow](http://en.wikipedia.org/wiki/Control_flow) used in computer programs... (you fill in the rest)
++ Functions are a form of [control flow](http://en.wikipedia.org/wiki/Control_flow) used in computer programs... (you fill in the rest)
 
 ### `function` keyword
 
-The `function` keyword is used to _define_ a function with parentheses and curly braces:
++ The `function` keyword is used to _define_ a function with parentheses and curly braces:
 
     // This is a Function Definition for `functionName`...
     function functionName ( /* arguments go here */ ) {
       // body of function goes here
     }
+<<<<<<< HEAD
 // the start of the function definition
 function hello (name) {
 // the body of the function `hello`
@@ -127,14 +168,28 @@ functionName();
 ### `typeof` keyword
 
 The `typeof` keyword function determines which of the 4 primitive types that element could be
+=======
++ // the start of the function definition
++ function hello (name) {
++ // the body of the function `hello`
+ + console.log("My name is " + " ")
++ // the function innovocation
++ } hello(eric);
++ Once a function has been defined, it can be _invoked_ by...
++ functionName();
 
-However, beyond the four primitive types, `typeof` can tell you if the element `undefined` or `null` are objects
+### `typeof` keyword
+
++ The `typeof` keyword function determines which of the 4 primitive types that element could be
+>>>>>>> master
+
++ However, beyond the four primitive types, `typeof` can tell you if the element `undefined` or `null` are objects
 
 ### Block Operator
 
-Block Operator - is used to group zero or more statemens. The block statements can be defined with curley brackets.
++ Block Operator - is used to group zero or more statemens. The block statements can be defined with curley brackets.
 
-example:
++ example:
 
 {
 
@@ -145,7 +200,7 @@ example:
 
 ### If, else statement
 
-If statement executes a statement if a specified condition is true. If the condition is false, another statement can be executed
++ If statement executes a statement if a specified condition is true. If the condition is false, another statement can be executed
 
 //if statement defition
 if (true) {
@@ -227,6 +282,7 @@ var names = ["Eric", "Tee"];
 
  + pop
 
+<<<<<<< HEAD
 ## Removes the last element from the Array and returns that element
 
  * var lastName = names.pop(); //removes Quan from the end
@@ -235,16 +291,31 @@ var names = ["Eric", "Tee"];
 ## Removes the first element from the front of an Array and returns that element
 
  * var lastLastName = names.shift(); // remove Eric from the front
+=======
+## Remove from the end of an Array
+
+ var lastName = names.pop(); //removes Quan from the end
+ // ["Eric", "Tee"]
+
+## Remove from the front of an Array
+
+ var lastLastName = names.shift(); // remove Eric from the front
+>>>>>>> master
  // ["Tee"]
 
 ## Add to the front of an Array
 
+<<<<<<< HEAD
  * var lasttName = names.unshift("Teach") // adds Teach to the front of the array
+=======
+ var lasttName = names.unshift("Teach") // adds Teach to the front of the array
+>>>>>>> master
 
  // ["Teach", "Tee"]
 
  ## Find the index of an item in the Array
 
+<<<<<<< HEAD
  * names.push("Cecil");
  // push adds an element to the end of an Array
  // ["Teach", "Tee", "Cecil"]
@@ -266,11 +337,27 @@ var names = ["Eric", "Tee"];
 // but will insert the element Word in that position
 
  // ["Teach", "Cecil", "Bill", "Word"]
+=======
+ names.push("Cecil");
+ // ["Teach", "Tee", "Cecil"]
+
+ var pos = names.indexOf("Tee");
+ // 1
+
+ ## Remove an item by Index Position
+
+ var removedItem = names.splice(pos, 1); // this is how to remove an element
+ // ["Teach", "Cecil"]
+>>>>>>> master
 
 
 ## finding the length of the array
 
+<<<<<<< HEAD
  * names.length //2
+=======
+ names.length //2
+>>>>>>> master
 
 ## DOM
 
@@ -345,10 +432,18 @@ Most commonly, you work with the document the script is running in by using docu
 
 
 
+<<<<<<< HEAD
 ## Event Bubbling
 
 > DOM elements can be nested inside each other. When the user clicks on the deepest
 > possible child element , the parent element or node can be triggered as well. The event > bubbling is the reason for the reaction.
+=======
+
+## Event Bubbling
+
+
+DOM elements can be nested inside each other. When the user clicks on the deepest possible child element , the parent element or node can be triggered as well. The event bubbling is the reason for the reaction.
+>>>>>>> master
 
 + There is concept called the `bubbling order` because an event bubbles from the
 + innermost element up through parents, like a bubble of air in the water
@@ -363,7 +458,13 @@ Captures down will start from the topmost element then one move into next elemen
 
 All handlers work on bubbling stage excepts addEventListener with last argument true, which is the only way to catch the event on capturing stage
 
+<<<<<<< HEAD
 ### Event Methods
+=======
+
+## Event Methods
+
+>>>>>>> master
 
 * `Event.preventDefault`() – cancels the event (if it is cancelable)
 
@@ -375,11 +476,16 @@ All handlers work on bubbling stage excepts addEventListener with last argument 
 
 * `Dblclick` – event is rarely used
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 ## Form Events
 
 Events triggered by actions inside of a HTML form (applies to almost all HTML elements, but is most used in form elements)
 
-Events
+## Events
+
 
 * `Onblur`  - Fires he moment that the element loses focus
 
@@ -416,24 +522,47 @@ Events
 + I have to be mindful for the browsers because sometimes they do not always agree
 + whether a change event should be fired for certain types of interaction
 
+<<<<<<< HEAD
 ### Load and Unload events
+=======
+
+### Load and Unload events
+
+>>>>>>> master
 
 * `onload` event happens when the window and it’s dependent resources,  including images, scripts, styles are loaded
 Attaching an `onload` handler allows to execute the code when all DOM elements are rendered and the whole document is complete
 
+<<<<<<< HEAD
 * `DOMContentLoaded` is another event that can be triggered just  like `onload` it triggers when the HTML page is parsed and DOM tree is built. Developers made this event because they noticed that visitors have to wait for all images, external counters to completely load for onload to fire
+=======
+`DOMContentLoaded` is another event that can be triggered just  like `onload` it triggers when the HTML page is parsed and DOM tree is built. Developers made this event because they noticed that visitors have to wait for all images, external counters to completely load for onload to fire
+
+The onunload event happens when a window is closed or changes it’s location
+
+	The syntax is similar: window.onunload
+The `onbeforeunload` event is special, because it triggers before the window is closed or changes location
+>>>>>>> master
 
 + The onunload event happens when a window is closed or changes it’s location
 
 + The syntax is similar: window.onunload
 + The `onbeforeunload` event is special, because it triggers before the window is closed + or changes location
 
+<<<<<<< HEAD
 + Unlike unload, it can be used to cancel the change
+=======
+The event is useful, for example with working with documents. The web-application can check if the document is saved and ask the user if he really wants to leave without saving the job.
+>>>>>>> master
 
 + To do so, the handler should return the text. Before unloading the window, the browser will output the returned text and ask the user, if he really want to leave the page
 
+<<<<<<< HEAD
 + The event is useful, for example with working with documents. The web-application can check if the document is saved and ask the user if he really wants to leave without saving the job.
 
 ### KeyboardEvent
 
 * KeyboardEvent objects describe a user interaction with the keyboard. Each event describes a key; the event type (keydown, keypress, or keyup) identifies what kind of activity was performed
+=======
+KeyboardEvent objects describe a user interaction with the keyboard. Each event describes a key; the event type (keydown, keypress, or keyup) identifies what kind of activity was performed
+>>>>>>> master
