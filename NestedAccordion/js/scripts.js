@@ -27,18 +27,18 @@
 // function
 function clickAction(eventObject) {
 
+  var headings = document.querySelector(".cbp-nttrigger");
+
+  for (var i = 0; i < headings.length; i++) {
+    // line 34 says if the element with the class elm
+      if (headings.className !== "cbp-ntopen") {
+        headings.className = "cbp-ntopen";
+      } else {
+        headings.className = null;
+      }
+    };
 
 }
-// selects oat cake
-var headings = document.querySelector(".cbp-nttrigger");
-
-for (var i = 0; i < headings.length; i++) {
-    if (headings.className !== "cbp-ntopen") {
-      mainElement.className = "cbp-ntopen";
-    } else {
-      mainElement.className = "";
-    }
-  };
 
 // // selects cream gummi bears
 // headings[1].addEventListener('click', clickEvent);
