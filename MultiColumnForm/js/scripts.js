@@ -55,3 +55,5 @@ drink.addEventListener('input', clickEvent);
 power.addEventListener('input', clickEvent);
 weapons.addEventListener('input', clickEvent);
 comments.addEventListener('input', clickEvent);
+
+sumbitButton.addEventListener('input', clickEvent);
