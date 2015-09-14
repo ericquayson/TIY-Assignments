@@ -27,17 +27,17 @@ var grid = document.querySelector("a.cbp-vm-icon.cbp-vm-list");
 
 
 //this will render the listView once the user is on the page
-list.addEventListener('click', function (listViewButton) {
-  var selectedViewButton = listViewButton.currentTarget;
-  viewButtons.className = "cbp-vm-switcher cbp-vm-view-list";
-  list.className = "cbp-vm-icon cbp-vm-list cbp-vm-selected";
-  grid.className = "cbp-vm-icon cbp-vm-grid"
+listViewButton.addEventListener('click', function (event) {
+
+    viewButtons.className = "cbp-vm-switcher cbp-vm-view-list";
+    list.className = "cbp-vm-icon cbp-vm-list cbp-vm-selected";
+    grid.className = "cbp-vm-icon cbp-vm-grid"
 });
 
 //this will render the gridView once the user clicks on this button
-grid.addEventListener('click', function (gridViewButton) {
-  var selectedViewButton = grid.currentTarget;
-  viewButtons.className = "cbp-vm-switcher cbp-vm-view-grid";
-  grid.className = "cbp-vm-icon cbp-vm-grid cbp-vm-selected";
-  list.className = "cbp-vm-icon cbp-vm-list"
+gridViewButton.addEventListener('click', function (event) {
+
+    viewButtons.className = "cbp-vm-switcher cbp-vm-view-grid";
+    grid.className = "cbp-vm-icon cbp-vm-grid cbp-vm-selected";
+    list.className = "cbp-vm-icon cbp-vm-list"
 });
