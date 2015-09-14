@@ -23,13 +23,25 @@
 
 + operator - +=
 
+<<<<<<< HEAD
+multiple
+
+2 * 3
+=======
 + multiple
 
 + 2 * 3
+>>>>>>> master
 
 + returns 6
 
+<<<<<<< HEAD
+operator - *=
+
+divide
+=======
 + operator - *=
+>>>>>>> master
 
 + divide
 
@@ -37,7 +49,11 @@
 
 + return 2.5
 
+<<<<<<< HEAD
+subtract
+=======
 + operator - /=
+>>>>>>> master
 
 + subtract
 
@@ -75,10 +91,25 @@
 
 + NaN - Not a Number
 
+<<<<<<< HEAD
+Infinity -
+=======
 + Undefined - indicates that a variable is not defined before being called
+>>>>>>> master
 
 + Infinity -
 
+<<<<<<< HEAD
+Variables declared within Javascript can be known as Identifiers
+= allows you to assign a value to an identifiers
+delimitiers = " " or ' ' or ,
+
+Example of a 'bear' word = var foo = foo;
+
++ -- catenation -- specifically, refer to strings and "smashingthemtogether"
+
+semicolon - is a statement operator
+=======
 
 + Variables declared within Javascript can be known as Identifiers
 + = allows you to assign a value to an identifiers
@@ -89,6 +120,7 @@
 + -- catenation -- specifically, refer to strings and "smashingthemtogether"
 
 + semicolon - is a statement operator
+>>>>>>> master
 
 + Sometimes Javascript can be read from left to right or right to left (depending on hierarchy of the operations)
 
@@ -97,11 +129,19 @@
 + To invoke a function     ____();
                       function name
 
+<<<<<<< HEAD
+  weirdos operators: . ()
+
+  comparsion  operators: === (this means a strict comparsion which is best practice)
+
+  console.log -- is an unanimous function
+=======
  + weirdos operators: . ()
 
  + comparsion  operators: === (this means a strict comparsion which is best practice)
 
   + console.log -- is an unanimous function
+>>>>>>> master
 
 ## Functions
 
@@ -115,6 +155,20 @@
     function functionName ( /* arguments go here */ ) {
       // body of function goes here
     }
+<<<<<<< HEAD
+// the start of the function definition
+function hello (name) {
+// the body of the function `hello`
+ console.log("My name is " + " ")
+// the function innovocation
+} hello(eric);
+Once a function has been defined, it can be _invoked_ by...
+functionName();
+
+### `typeof` keyword
+
+The `typeof` keyword function determines which of the 4 primitive types that element could be
+=======
 + // the start of the function definition
 + function hello (name) {
 + // the body of the function `hello`
@@ -127,6 +181,7 @@
 ### `typeof` keyword
 
 + The `typeof` keyword function determines which of the 4 primitive types that element could be
+>>>>>>> master
 
 + However, beyond the four primitive types, `typeof` can tell you if the element `undefined` or `null` are objects
 
@@ -227,6 +282,16 @@ var names = ["Eric", "Tee"];
 
  + pop
 
+<<<<<<< HEAD
+## Removes the last element from the Array and returns that element
+
+ * var lastName = names.pop(); //removes Quan from the end
+ // ["Eric", "Tee"]
+
+## Removes the first element from the front of an Array and returns that element
+
+ * var lastLastName = names.shift(); // remove Eric from the front
+=======
 ## Remove from the end of an Array
 
  var lastName = names.pop(); //removes Quan from the end
@@ -235,16 +300,44 @@ var names = ["Eric", "Tee"];
 ## Remove from the front of an Array
 
  var lastLastName = names.shift(); // remove Eric from the front
+>>>>>>> master
  // ["Tee"]
 
 ## Add to the front of an Array
 
+<<<<<<< HEAD
+ * var lasttName = names.unshift("Teach") // adds Teach to the front of the array
+=======
  var lasttName = names.unshift("Teach") // adds Teach to the front of the array
+>>>>>>> master
 
  // ["Teach", "Tee"]
 
  ## Find the index of an item in the Array
 
+<<<<<<< HEAD
+ * names.push("Cecil");
+ // push adds an element to the end of an Array
+ // ["Teach", "Tee", "Cecil"]
+
+ * var pos = names.indexOf("Tee");
+ // 1
+
+ ## Changes the content of an array by removing existing elements and/or adding new elements
+
+// the splice method takes two different parameters the start and deleteCount
+
+ * var removedItem = names.splice(pos, 1); // this is how to remove an element
+
+// var randomItems = ["Teach", "Cecil", "Bill"]
+// var removedRandomItem = randomItems.splice(2, 0, "Word");
+
+// The code above reads the array randomItems has the method splice attached +
+// and will start the method at the position 2 in the array and then remove 0 elements +
+// but will insert the element Word in that position
+
+ // ["Teach", "Cecil", "Bill", "Word"]
+=======
  names.push("Cecil");
  // ["Teach", "Tee", "Cecil"]
 
@@ -255,23 +348,30 @@ var names = ["Eric", "Tee"];
 
  var removedItem = names.splice(pos, 1); // this is how to remove an element
  // ["Teach", "Cecil"]
+>>>>>>> master
 
 
 ## finding the length of the array
 
+<<<<<<< HEAD
+ * names.length //2
+=======
  names.length //2
+>>>>>>> master
 
 ## DOM
 
-DOM stands for Document Object Model
+### DOM stands for Document Object Model
 
-The `DOM` explicitly describes a programming interface for HTML, XML and SVG documents. The DOM provides a structured representation of a document tree and it defines a way that the structure can be accessed from programs so that they can change the  document structure, style and content.
+> The `DOM` explicitly describes a programming interface for HTML, XML and SVG documents.
+> The DOM provides a structured representation of a document tree and it defines a way that > the structure can be accessed from programs so that they can change the  document
+> structure, style and content.
 
-A document object can be obtained from various APIs:
+#### A document object can be obtained from various APIs:
 
 `document` provides developers with a lot of functionality to maniuplate or extract things
 
- Document object Methods
+ ### Document object Methods
 
   + `getElementById`  - will allow for a developer to select an element or dom node by id that is given to it in the HTML
   +                  Example document.getElementById("
@@ -327,44 +427,59 @@ Most commonly, you work with the document the script is running in by using docu
  `HTMLCollection`
  + `nodeList` - represents a list of nodes, like an HTML element's collection of child nodes
  ## The Difference
-+ While a NodeList can contain any node type, an HTMLCollection is supposed to only contain Element nodes
++ While a NodeList can contain any node type, an HTMLCollection is supposed to only contain      Element nodes
 + An HTMLCollection provides the same methods as a NodeList and additionally a method called nameItem
 
 
 
+<<<<<<< HEAD
+## Event Bubbling
+
+> DOM elements can be nested inside each other. When the user clicks on the deepest
+> possible child element , the parent element or node can be triggered as well. The event > bubbling is the reason for the reaction.
+=======
 
 ## Event Bubbling
 
 
 DOM elements can be nested inside each other. When the user clicks on the deepest possible child element , the parent element or node can be triggered as well. The event bubbling is the reason for the reaction.
+>>>>>>> master
 
-There is concept called the `bubbling order` because an event bubbles from the innermost element up through parents, like a bubble of air in the water
++ There is concept called the `bubbling order` because an event bubbles from the
++ innermost element up through parents, like a bubble of air in the water
 
-The deepest element is also called the target or the originating element
++ The deepest element is also called the target or the originating element
 
-Target is simply the element or node you want to work with specifically,
++ Target is simply the element or node you want to work with specifically,
 
-Specifically, event bubbling will eventually bubble up to the top until it gets to the HTML tag. In order to stop this reaction of the onclick event is event.stopPropagation() or IE<9 event.cancelBubble = true
++ Specifically, event bubbling will eventually bubble up to the top until it gets to the HTML tag. In order to stop this reaction of the onclick event is event.stopPropagation() or IE<9 event.cancelBubble = true
 
 Captures down will start from the topmost element then one move into next element down from it (the opposite of bubbling up)
 
 All handlers work on bubbling stage excepts addEventListener with last argument true, which is the only way to catch the event on capturing stage
 
+<<<<<<< HEAD
+### Event Methods
+=======
 
 ## Event Methods
 
+>>>>>>> master
 
-Event.preventDefault() – cancels the event (if it is cancelable)
+* `Event.preventDefault`() – cancels the event (if it is cancelable)
 
-Mouse events (sometimes are better to used than click events, but some browsers may not execute the code)
+* `Mouse events` (sometimes are better to used than click events, but some browsers may not execute the code)
 
-Mousedown – user depresses the mouse button on the element
+* `Mousedown` – user depresses the mouse button on the element
 
-Mouseup – user releases the mouse button on this element
+* `Mouseup` – user releases the mouse button on this element
 
-Dblclick – event is rarely used
+* `Dblclick` – event is rarely used
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> master
 ## Form Events
 
 Events triggered by actions inside of a HTML form (applies to almost all HTML elements, but is most used in form elements)
@@ -372,58 +487,82 @@ Events triggered by actions inside of a HTML form (applies to almost all HTML el
 ## Events
 
 
-Onblur  - Fires he moment that the element loses focus
+* `Onblur`  - Fires he moment that the element loses focus
 
-Onchange – Fires the moment when the value of the element is changed
+* `Onchange` – Fires the moment when the value of the element is changed
 
-Oncontextmenu – script to be run when a context menu is triggered
+* `Oncontextmenu` – script to be run when a context menu is triggered
 
-Onfocus – fires the moment when the element gets focus
+* `Onfocus` – fires the moment when the element gets focus
 
-Oninput – script to be run when an element gets user input
+* `Oninput` – script to be run when an element gets user input
 
-Oninvalid – script to the run when an element is invalid
+* `Oninvalid` – script to the run when an element is invalid
 
-Onreset – fires when the reset button in a form is clicked
+* `Onreset` – fires when the reset button in a form is clicked
 
-Onsubmit – fires when a form is submitted
+* `Onsubmit` – fires when a form is submitted
 
-Scroll – fires when the user scrolls an element by any means (arrow keys, scrollbar or mouse wheel). You cannot prevent the scrolling.
+* `Scroll` – fires when the user scrolls an element by any means (arrow keys, scrollbar or mouse wheel). You cannot prevent the scrolling.
 
-Mousewheel – fires when the user uses the mouse wheel. You can prevent this event’s default. Note that the page does not have to scroll in order to fire this event
+* `Mousewheel` – fires when the user uses the mouse wheel. You can prevent this event’s default. Note that the page does not have to scroll in order to fire this event
 
-The change event is fired for <input>, <select>, and <textarea> elements when a change to the element’s value is committed by the user. Unlike the input event, the change event is not necessarily fired for each change to an element’s value
+## Change Event
++ The change event is fired for `<input>`, `<select>`, and `<textarea>` elements
 
-	Context situations for the change event
++ when a change to the element’s value is committed by the user. Unlike the input + event, the change event is not necessarily fired for each change to an + element’s value
 
-When the element is activated (by clicking or using the keyboard) for  <input type=”radio”> and <input type=”checkbox”>;
+	## Context situations for the change event
 
-When the user commits the change explicitly (e.g by selecting a value from a <select>’s dropdown with a mouse click, by selecting a date from a date picker for <input type=”date”>,  by selecting a file in the file picker for <input type=”file”>
+* When the element is activated (by clicking or using the keyboard) for  `<input type=”radio”>` and `<input type=”checkbox”>`
 
-When the element loses focus after its value was changed, but not committed (e.g after editing the value of <textarea> or <input type=”text”>)
+* When the user commits the change explicitly (e.g by selecting a value from a `<select>’s` dropdown with a mouse click, by selecting a date from a date picker for `<input type=”date”>`,  by selecting a file in the file picker for `<input type=”file”>`
+* When the element loses focus after its value was changed, but not committed (e.g after editing the value of `<textarea>` or `<input type=”text”>`)
 
-I have to be mindful for the browsers because sometimes they do not always agree whether a change event should be fired for certain types of interaction
++ I have to be mindful for the browsers because sometimes they do not always agree
++ whether a change event should be fired for certain types of interaction
 
+<<<<<<< HEAD
+### Load and Unload events
+=======
 
 ### Load and Unload events
 
+>>>>>>> master
 
-`onload` event happens when the window and it’s dependent resources,  including images, scripts, styles are loaded
+* `onload` event happens when the window and it’s dependent resources,  including images, scripts, styles are loaded
 Attaching an `onload` handler allows to execute the code when all DOM elements are rendered and the whole document is complete
 
+<<<<<<< HEAD
+* `DOMContentLoaded` is another event that can be triggered just  like `onload` it triggers when the HTML page is parsed and DOM tree is built. Developers made this event because they noticed that visitors have to wait for all images, external counters to completely load for onload to fire
+=======
 `DOMContentLoaded` is another event that can be triggered just  like `onload` it triggers when the HTML page is parsed and DOM tree is built. Developers made this event because they noticed that visitors have to wait for all images, external counters to completely load for onload to fire
 
 The onunload event happens when a window is closed or changes it’s location
 
 	The syntax is similar: window.onunload
 The `onbeforeunload` event is special, because it triggers before the window is closed or changes location
+>>>>>>> master
 
-Unlike unload, it can be used to cancel the change
++ The onunload event happens when a window is closed or changes it’s location
 
-To do so, the handler should return the text. Before unloading the window, the browser will output the returned text and ask the user, if he really want to leave the page
++ The syntax is similar: window.onunload
++ The `onbeforeunload` event is special, because it triggers before the window is closed + or changes location
 
+<<<<<<< HEAD
++ Unlike unload, it can be used to cancel the change
+=======
 The event is useful, for example with working with documents. The web-application can check if the document is saved and ask the user if he really wants to leave without saving the job.
+>>>>>>> master
 
-KeyboardEvent
++ To do so, the handler should return the text. Before unloading the window, the browser will output the returned text and ask the user, if he really want to leave the page
 
+<<<<<<< HEAD
++ The event is useful, for example with working with documents. The web-application can check if the document is saved and ask the user if he really wants to leave without saving the job.
+
+### KeyboardEvent
+
+* KeyboardEvent objects describe a user interaction with the keyboard. Each event describes a key; the event type (keydown, keypress, or keyup) identifies what kind of activity was performed
+=======
 KeyboardEvent objects describe a user interaction with the keyboard. Each event describes a key; the event type (keydown, keypress, or keyup) identifies what kind of activity was performed
+>>>>>>> master
