@@ -2,6 +2,7 @@
 
 ## Selectors
 
+<<<<<<< HEAD
 * class selector will select the class by using "."
 * id selectors will select the element by using "#"
 * * -- will select all of your items
@@ -33,6 +34,8 @@
 *
 
 
+=======
+>>>>>>> origin/09--fistful-of-dollar
 ## Properties
 
 * `display` property is used for controlling layout. Every element on the DOM has a +
@@ -82,7 +85,9 @@
 
     * fixed element does not leave a gap in the page where it would normally have been located
 
-+ `position: absolute` -- (trickery) will position the element relative to the nearest positioned ancestor instead of relative to the viewport.
+
++ `position: absolute` -- (trickery) will position the element relative to the nearest positioned ancestor instead of relaive to the viewport.
+>>>>>>> origin/09--fistful-of-dollar
 
 + `float` -- is intended for wrapping text around images
 
@@ -94,6 +99,7 @@
 
 + if you use a fixed header or footer, make sure at on the body element use a margin-bottom so there is space for it
 
+<<<<<<< HEAD
 + black;`border-bottom: 1px solid black;` looks better than `text-decoration: underline`
 
 + X:not(selector) - negation pseduo class is particularly helpful
@@ -111,17 +117,24 @@
 + X:last-child - allows you to select according to the last child of the parent element
 
 + X:only-child - selects the only child of that element
+=======
+
+>>>>>>> origin/09--fistful-of-dollar
 
 #### `div` notes
 
 * `div` is a block-level element. This means that `div`s start on a new line and +
   stretch as far to the left and the right
+<<<<<<< HEAD
 
 + pixels, rem, and percentages are units you can use to measure wihtin in CSS
 
 + pixels will not give you an absolute measure
 
 + rem will give you an absolute measure relative to the element it is referrencing
+=======
+*
+>>>>>>> origin/09--fistful-of-dollar
 
 ### [`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
 
