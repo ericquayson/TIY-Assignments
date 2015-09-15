@@ -82,7 +82,7 @@
 
     * fixed element does not leave a gap in the page where it would normally have been located
 
-+ `position: absolute` -- (trickery) will position the element relative to the nearest positioned ancestor instead of relaive to the viewport.
++ `position: absolute` -- (trickery) will position the element relative to the nearest positioned ancestor instead of relative to the viewport.
 
 + `float` -- is intended for wrapping text around images
 
