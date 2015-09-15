@@ -2,6 +2,40 @@
 
 ## Selectors
 
+<<<<<<< HEAD
+* class selector will select the class by using "."
+* id selectors will select the element by using "#"
+* * -- will select all of your items
+
+* descendant selector.
+
+* you can select all of the elements on the page by simply using their HTML element name for example
+
+* a - will select the a tags
+
+* ul - will select the unordered list
+
+* X:link - targets all anchor tags which have ye to be clicked
+
+* X:visited - allows us to apply specific styling to only the anchor tags on the page which have been clicked on, or visited
+
+* X > Y - will select the direct children of that element
+
+* X ~ Y - will select the first element that is immediately preceded by the former selector
+
+* X[title] -- attributes selector (this example will select the element that has a title)
+
+* X:checked -- this pseudo class will only target a user interface element that has been checked - like a radio button, or checkbox
+
+* X:after -- the before and after pseduo classes are very helpful.
+
+* X:hover -- will add an hover effect over that element
+
+*
+
+
+=======
+>>>>>>> origin/09--fistful-of-dollar
 ## Properties
 
 * `display` property is used for controlling layout. Every element on the DOM has a +
@@ -51,7 +85,9 @@
 
     * fixed element does not leave a gap in the page where it would normally have been located
 
+
 + `position: absolute` -- (trickery) will position the element relative to the nearest positioned ancestor instead of relaive to the viewport.
+>>>>>>> origin/09--fistful-of-dollar
 
 + `float` -- is intended for wrapping text around images
 
@@ -63,13 +99,42 @@
 
 + if you use a fixed header or footer, make sure at on the body element use a margin-bottom so there is space for it
 
+<<<<<<< HEAD
++ black;`border-bottom: 1px solid black;` looks better than `text-decoration: underline`
 
++ X:not(selector) - negation pseduo class is particularly helpful
+
++ X::pseudo Element -- allows the developer to select a very specific element like the first letter or sentence within an element
+
++ X:nth-child(n) - the nth-child accepts an integer as a parameter. This is not zero-based
+
++ X:nth-last-child(n) -- allows you to pick the last child
+
++ X:nth-of-type(n) -- allows you to select according to the type of element and this selector allows you to pass through a number to specifically you want to work with
+
++ X:first-child - allows you to select according to the the first child of the parent element
+
++ X:last-child - allows you to select according to the last child of the parent element
+
++ X:only-child - selects the only child of that element
+=======
+
+>>>>>>> origin/09--fistful-of-dollar
 
 #### `div` notes
 
 * `div` is a block-level element. This means that `div`s start on a new line and +
   stretch as far to the left and the right
+<<<<<<< HEAD
+
++ pixels, rem, and percentages are units you can use to measure wihtin in CSS
+
++ pixels will not give you an absolute measure
+
++ rem will give you an absolute measure relative to the element it is referrencing
+=======
 *
+>>>>>>> origin/09--fistful-of-dollar
 
 ### [`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
 
