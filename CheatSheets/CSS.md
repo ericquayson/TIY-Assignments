@@ -1,7 +1,5 @@
 # Reading CSS
 
-## Selectors
-
 ## Properties
 
 * `display` property is used for controlling layout. Every element on the DOM has a +
@@ -23,11 +21,28 @@
 
 + setting the width of a block element will prevent the element from stretching to the corners of the right and left of the webpage
 
-+ setting the left and right margins to `margin: auto` and this will center the element horizontally
+### Height and width
 
-+ `max-width` at 600px makes the site responsive for mobile because of the smaller screens (supported by all browsers)
+      * there are several different values that can be passed for a value. percentages, auto and any possible unit of measure
+
++ `max-width` will set the `max-width` for a given element. Additionally, it will prevent the element from getting any larger than that given size
+
+
++ `min-width` will set the min width for a given element. Additionally, it will prevent the element from getting any smaller than the given size
+     * at 600px makes the site responsive for mobile because of the smaller screens (supported by all browsers)
+
++ `min-height` will set the `min-height` for a given element. Additionally, it will prevent the element from getting any larger than the given size
+
++
+
 
 + the box model -- is essentially a box that wraps around HTML elements, and it consists of: margins, borders, padding and the actual content
+
++ margins -- the margin has the ability to set on all sides; developers can also use negative values for the margins (margin-top, margin-right, margin-bottom, margin-left)
+
++ setting the left and right margins to `margin: auto` and this will center the element horizontally
+
++ borders in the box model
 
     * the first layer: margin
     * the second layer: border
@@ -90,3 +105,30 @@ The text color of an element and its decorations (??)
 * `header`
 * `footer`
 * `section`
+
+## Selectors
+
++ class selector will select the class by using "."
++ id selectors will select the element by using "#"
++ * -- will select all of your items
++ descendant selector --
+
++ you can select all of the elements on the page by simply using their HTML element name for example
+      * a - will select the a tags
+      * ul - will select the unordered list
+
++ X:link - targets all anchor tags which have ye to be clicked
+
++ X:visited - allows us to apply specific styling to only the anchor tags on the page which have been clicked on, or visited
+
++ X > Y - will select the direct children of that element
+
++ X ~ Y - will select the first element that is immediately preceded by the former selector
+
++ X[title] -- attributes selector (this example will select the element that has a title)
+
++ X:checked -- this pseudo class will only target a user interface element that has been checked - like a radio button, or checkbox
+
++ X:after -- the before and after pseduo classes are very helpful.
+
++ X:hover -- will add an hover effect over that element
