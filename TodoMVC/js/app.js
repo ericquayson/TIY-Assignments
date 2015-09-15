@@ -14,9 +14,12 @@
 // I need to be able to reorganize the to do list
 // I need to be able to have a check box to distinguished the task
 // I need buttons to show which to do task are still active and a button to distinguished if the task was completed
-// I need to then have the buttons reorganize the list to the appropriate assignmet of the task (whether it is active or completed)
+// I need to then have the buttons reorganize (filter) the list to the appropriate assignmet of the task (whether it is active or completed)
 // I need a number counter to keep track of how many to do list need to be completed
-
+// I need to be able to edit my to do list
+// I need to be able to delete my to do list so I dont have to see it anymore
+//
+//
 (function (window) {
 	'use strict';
 
