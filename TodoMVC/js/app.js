@@ -8,6 +8,14 @@
 // I can filter the list of tasks so that I can see just what tasks I have completed and what are left to do.
 
 
+//Psuedo code
+// I need the to do task maker to have an input text box so that the user can input the to dos
+// I need the next to do to appear at the first to do
+// I need to be able to reorganize the to do list
+// I need to be able to have a check box to distinguished the task
+// I need buttons to show which to do task are still active and a button to distinguished if the task was completed
+// I need to then have the buttons reorganize the list to the appropriate assignmet of the task (whether it is active or completed)
+// I need a number counter to keep track of how many to do list need to be completed
 
 (function (window) {
 	'use strict';
