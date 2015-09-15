@@ -12,7 +12,7 @@ console.assert(add(0, 6) === 6);
 console.assert(add(0, 7) === 7);
 console.assert(add(0, 8) === 8);
 console.assert(add(0, 9) === 9);
- /* FILL ME IN */
+
 
 /**
  * @param {Number} A to add to B
