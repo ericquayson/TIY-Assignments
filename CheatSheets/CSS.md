@@ -43,12 +43,22 @@
 
 + setting the left and right margins to `margin: auto` and this will center the element horizontally
 
-+ borders in the box model
++ layers in the box model
 
     * the first layer: `margin`
     * the second layer: `border`
     * the third layer: `padding`
     * the last layer: the actual content
+
++  `border-style` has plenty of values
+    * `none` - defines no border
+    * `dotted` -- defines a dotted border
+    * `solid` -- defines a solid border
+    * `double` -- defines a double border
+    * `groove` -- defines a 3D grooved border. The effect depends on the border-color value
+    * `ridge` -- defines a 3D ridge border. The effect depends on the border-color value
+    * `inset` -- defines a 3D inset border.
+    * `outset` -- defines a 3D outset border
 
 + `box-sizing` --
     * `box-sizing: border-box` on an element, the padding and border of that element no longer increase its `width`
