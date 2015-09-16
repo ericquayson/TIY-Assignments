@@ -1,7 +1,8 @@
 .main {
   background-color: #FF00FF;
-  margin-left: 3px;
+  margin-left: 7.5px;
   margin-right: 7.5px;
+  margin-top: auto;
   font-family: cursive;
   min-width: 700px;
   /* this will help the sizing of the webpage for different browsers */
