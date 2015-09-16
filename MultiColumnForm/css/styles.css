@@ -1,3 +1,18 @@
 .main {
   background-color: #FF00FF;
+  margin-left: 3px;
+  margin-right: 7.5px;
+  font-family: cursive;
+  min-width: 700px;
+  /* this will help the sizing of the webpage for different browsers */
+  -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+           box-sizing: border-box;
+}
+
+label {
+  color: white;
+  border: solid black 5px;
+  padding-left: 10px;
+
 }

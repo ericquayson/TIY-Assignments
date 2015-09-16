@@ -1,0 +1,7 @@
+/* this sizing has to be smaller than 600px
+    I need to add something about the meta viewport */
+
+@media screen and (max-width:599px) {
+  nav li {
+    display: inline;
+}
