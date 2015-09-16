@@ -1,7 +1,7 @@
 .main {
-  background-color: #FF00FF;
-  margin-left: 7.5px;
-  margin-right: 7.5px;
+  background-color: #47A3DA;
+  margin-left: 70px;
+  margin-right: 70px;
   margin-top: auto;
   font-family: cursive;
   min-width: 700px;
@@ -9,6 +9,7 @@
   -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
            box-sizing: border-box;
+  font-size: 20px;
 }
 
 label {
@@ -18,7 +19,36 @@ label {
 
 }
 
-.cbp-mc-column {
-  padding-left: 3px;
-  padding-right: 3px;
+/*:focus {outline: none;}*/
+
+h1 {
+  padding-left: 300px;
+  min-width: 600px;
+  color: #47A3DA;
+  line-height: normal;
+}
+
+form {
+  background-color:
+}
+
+
+box {
+  height: 165px;
+  width: auto;
+  border:
+}
+
+position {
+  display: block;
+
+}
+
+.cbp-mc-form {
+  line-height: 70px;
+
+}
+
+.cbp-mc-submit {
+  
 }
