@@ -19,7 +19,9 @@
 
 #### notes
 
-+ setting the width of a block element will prevent the element from stretching to the corners of the right and left of the webpage
++ setting the width of a `block` element will prevent the element from stretching to the corners of the right and left of the webpage
+
++ Three Properties that alter layout display, position and float
 
 ### Height and width
 
@@ -35,21 +37,21 @@
 + `min-height` will set the `min-height` for a given element. Additionally, it will prevent the element from getting any larger than the given size
 
 
-+ the box model -- is essentially a box that wraps around HTML elements, and it consists of: margins, borders, padding and the actual content
++ the box model -- is essentially a box that wraps around HTML elements, and it consists of: `margin`, `borders`, `padding` and the actual content
 
-+ margins -- the margin has the ability to set on all sides; developers can also use negative values for the margins (margin-top, margin-right, margin-bottom, margin-left)
++ margins -- the margin has the ability to set on all sides; developers can also use negative values for the margins (`margin-top`, `margin-right`, `margin-bottom`, `margin-left`)
 
 + setting the left and right margins to `margin: auto` and this will center the element horizontally
 
 + borders in the box model
 
-    * the first layer: margin
-    * the second layer: border
-    * the third layer: padding
+    * the first layer: `margin`
+    * the second layer: `border`
+    * the third layer: `padding`
     * the last layer: the actual content
 
 + `box-sizing` --
-    * `box-sizing: border-box` on an element, the padding and border of that element no longer increase its width
+    * `box-sizing: border-box` on an element, the padding and border of that element no longer increase its `width`
 
   use this in workable code --
   -webkit-box-sizing: border-box;
@@ -57,17 +59,17 @@
           box-sizing: border-box;
 
 
-+ `position: static` -- is a default value and is not positioned in any special way. A static element is said to be not positioned and an element with its position set to anything else is said to be positioned
++ `position: static` -- is a default value and is not positioned in any special way. A `static` element is said to be not positioned and an element with its position set to anything else is said to be positioned
 
 + `position: relative` -- behaves the same as `static` unless you add some extra properties
 
-+ `position: fixed` -- will keep the element in that position and it will stay static on the webpage
++ `position: fixed` -- will keep the element in that position and it will stay `static` on the webpage
 
-    * fixed element does not leave a gap in the page where it would normally have been located
+    * `fixed` element does not leave a gap in the page where it would normally have been located
 
-+ `position: absolute` -- (trickery) will position the element relative to the nearest positioned ancestor instead of relaive to the viewport.
++ `position: absolute` -- (trickery) will position the element relative to the nearest positioned ancestor instead of `relative` to the viewport.
 
-+ `float` -- is intended for wrapping text around images
++ `float` -- is intended for wrapping text around images (the width of the element changes and other adjacent elements... move)
 
    * `clear` property controls the behavior of floats. Under the `clear` property one can use `left` or `right` to clear the element that is being floated or one can use `both`
 
@@ -113,8 +115,8 @@ The text color of an element and its decorations (??)
 + descendant selector --
 
 + you can select all of the elements on the page by simply using their HTML element name for example
-      * a - will select the a tags
-      * ul - will select the unordered list
+      * `a` - will select the a tags
+      * `ul` - will select the unordered list
 
 + X:link - targets all anchor tags which have ye to be clicked
 
@@ -131,3 +133,54 @@ The text color of an element and its decorations (??)
 + X:after -- the before and after pseduo classes are very helpful.
 
 + X:hover -- will add an hover effect over that element
+
++ X:checked -- this pseudo class can be applied to any `<input type="radio">`, `<input type="checkbox">`, or `<option>` in a `<select>` element that is checked or toggled to an element
+
++ X:enabled -- this represents an element enabled if it can be activated (e.g selected, clicked on or accept text input)
+
++ X:disabled -- this represents an element disabled if it can be deactivated
+
++ X:empty
+
+### Text Properties
+
++ `color` -- used to set the color of the text
+
++ `text-align` - used to set the horizontal alignment of a text
+        * `left`, `right`, `justified` are possible values
++ `text-transformation` -- used to specify            uppercase or lowercase letters or capitalize the first letter of each with pseudo code
+
++ `text-indentation` -- used to specify the indentation
+
++ `text-shadow` -- specifies the shadow effect added to text
+
++ `vertical-align` -- sets the vertical alignment of an element
+
++ `word-spacing` -- increases or decreased the space between words in a text
+
++ `text-decoration` property is a shorthand and can use the values of each of the three longhand properties: `text-decoration-line`, `text-decoration-color`,  `text-decoration-style`
+
+### Font Properties
+
++ `font-family` -- can be assigned by a specific font name or generic `font-family`
+      * syntax: font-family: [[<font-family> | <generic-family>],]
+
++ `font-stlye` -- can display `font` three different ways: normal, italic or oblique (slanted)
+
++ `font-variant` -- determines if the font is to display in normal or small caps. Default value is normal
+
++ `font-weight` -- it specifies the weight of the font. Values that are possible values `bolder` and `lighter` and `bolder` and 100, 200, 300, 400, 500, 600, 700, 800, 900
+
++ `font-size` -- modifies the size of the displayed font. Default value is `medium`. Possible values: xx-small, x-small, small, medius, large, x-large, XX-large, percentages, length, relative sizing and etc
+
++ `font` -- shorthand for the other properties
+
+### Line Properties
+
++ `line-height`-- specifies the minimum height of line boxes within the element
+      * default value: `normal`
+      * possible values: any measurement
+
+
+
++
