@@ -1,0 +1,30 @@
+/* Working with the overall container. The things I want to be global or rendered
+    on the whole page needs to go under this .container
+*/
+
+.container {
+  background-color: white;
+  margin: 0 60px 0 60px;
+  font-size: 19pt;
+  font-family: lato;
+  font-color: indigo;
+  top: 20%;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 7%;
+}
+/* I need to float the nav bar to the right and get the icons to show instead +
+    instead of the text
+*/
+nav {
+  float: right;
+
+}
+/* Code for getting icons to show */
+
+nav.bp-icon:before {
+  content:
+  font-family: icon;
+}
