@@ -6,13 +6,18 @@
 
 }
 
+.clearfix {
+  padding: 10px, 45px, 0, 45px;
+
+}
+
 *h3 {
   line-height: 15px;
   font-size: 23px:
   text-align: left;
-  border:
   height: 115px;
   min-width: 600px;
+  list-style-type: none;
 }
 
 .cbp-ntcontent {
