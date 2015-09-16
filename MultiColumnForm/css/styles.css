@@ -16,6 +16,7 @@ label {
   color: white;
   border: solid black 5px;
   padding-left: 10px;
+  
 
 }
 
@@ -46,9 +47,14 @@ position {
 
 .cbp-mc-form {
   line-height: 70px;
+  text-align: left;
+  padding-left: 16px;
 
 }
 
 .cbp-mc-submit {
-  
+  line-height: normal;
+  color: inherit;
+  font-size: 30px;
+  font-weight: bold;
 }
