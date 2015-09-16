@@ -29,10 +29,11 @@
 
 
 + `min-width` will set the min width for a given element. Additionally, it will prevent the element from getting any smaller than the given size
-
      * at 600px makes the site responsive for mobile because of the smaller screens (supported by all browsers)
 
 + `min-height` will set the `min-height` for a given element. Additionally, it will prevent the element from getting any larger than the given size
+
++
 
 
 + the box model -- is essentially a box that wraps around HTML elements, and it consists of: margins, borders, padding and the actual content
@@ -83,7 +84,7 @@
 
 * `div` is a block-level element. This means that `div`s start on a new line and +
   stretch as far to the left and the right
-
+*
 
 ### [`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
 
