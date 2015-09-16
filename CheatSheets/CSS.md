@@ -146,8 +146,11 @@ The text color of an element and its decorations (??)
 
 + `color` -- used to set the color of the text
 
-+ `text-align` - used to set the horizontal alignment of a text
++ `text-align` - used to set the horizontal alignment of a     text
+
         * `left`, `right`, `justified` are possible values
+
+
 + `text-transformation` -- used to specify            uppercase or lowercase letters or capitalize the first letter of each with pseudo code
 
 + `text-indentation` -- used to specify the indentation
@@ -171,7 +174,7 @@ The text color of an element and its decorations (??)
 
 + `font-weight` -- it specifies the weight of the font. Values that are possible values `bolder` and `lighter` and `bolder` and 100, 200, 300, 400, 500, 600, 700, 800, 900
 
-+ `font-size` -- modifies the size of the displayed font. Default value is `medium`. Possible values: xx-small, x-small, small, medius, large, x-large, XX-large, percentages, length, relative sizing and etc
++ `font-size` -- modifies the size of the displayed font. Default value is `medium`. Possible values: `xx-small`, `x-small`, `small`, `medium`, `large`, `x-large`, `XX-large`, percentages, length, relative sizing and etc
 
 + `font` -- shorthand for the other properties
 
@@ -180,7 +183,5 @@ The text color of an element and its decorations (??)
 + `line-height`-- specifies the minimum height of line boxes within the element
       * default value: `normal`
       * possible values: any measurement
-
-
 
 +
