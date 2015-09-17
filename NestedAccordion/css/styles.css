@@ -1,6 +1,12 @@
 /* Do Not Forget Responsive */
 
+ div.main {
 
+webkit-columns: 3 100%;
+  -moz-columns: 3 100%;
+        columns: 3 100%;
+
+}
 
 .container {
   font-family: sans-serif;
@@ -10,6 +16,7 @@
   min-width: 600px;
   font-size: 23pt;
   font-style: normal;
+  letter-spacing: normal;
 }
 
 .clearfix {
@@ -38,4 +45,15 @@ h1 {
   font-style: normal;
   font-weight: bold;
 
+}
+
+
+@font-face {
+  src: url();
+}
+
+h3.cbp-nttrigger::before {
+  font-family: icons;
+  content: "&#8426;";
+  speak: none;
 }
