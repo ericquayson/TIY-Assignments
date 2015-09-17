@@ -1,9 +1,15 @@
+/* Do Not Forget Responsive */
+
+
+
 .container {
   font-family: sans-serif;
   line-height: 15px;
   color: #4723DA;
   margin: 0 45px 0 45px;
-
+  min-width: 600px;
+  font-size: 23pt;
+  font-style: normal;
 }
 
 .clearfix {
@@ -22,5 +28,14 @@
 
 .cbp-ntcontent {
   display: none;
+
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 15px;
+  font-size: 25pt;
+  font-style: normal;
+  font-weight: bold;
 
 }
