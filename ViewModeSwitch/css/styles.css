@@ -9,22 +9,71 @@
   font-family: lato;
   font-color: indigo;
   top: 20%;
+  border-style: solid;
+  box-sizing: border-box;
+  border-color: #47A3DA;
+
+}
+
+title {
+  color: #47A3DA;
+
+}
+
+/* The product title */
+
+h3.cbp-vm-title {
+  box-sizing: border-box;
+  font-size: 25pt;
+  font-weight: bold;
+  font-family: sans-serif;
 }
 
 h1 {
   text-align: center;
   padding-bottom: 7%;
+  color: #47A3DA;
+
 }
 /* I need to float the nav bar to the right and get the icons to show instead +
     instead of the text
 */
+
 nav {
   float: right;
+  box-sizing: border-box;
+}
+
+.cbp-vm-icon.cbp-vm-add {
+  background-color: #47A3DA;
+  font-size: 13pt;
+  height: 25%;
+  width: 25%;
+  padding-top: 10%;
 
 }
+
 /* Code for getting icons to show */
 
 nav.bp-icon:before {
   content:
   font-family: icon;
+}
+
+
+/* selecting the overall element for the product */
+ul > li {
+
+  text-align: center;
+  color: #47A3DA;
+  font-size: 15px;
+  background-color: white;
+  padding-bottom: 3%;
+}
+ Product-price
+li.cbp-vm-price {
+  color: black;
+  font-size: 15%;
+  padding-top: 2%;
+  box-sizing: border-box;
 }
