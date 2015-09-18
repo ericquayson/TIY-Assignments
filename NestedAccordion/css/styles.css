@@ -1,22 +1,33 @@
 /* Do Not Forget Responsive */
 
- div.main {
+/* Font url to work with */
 
-webkit-columns: 3 100%;
-  -moz-columns: 3 100%;
-        columns: 3 100%;
+/*@import
+  url()
 
-}
+ .main {
+
+        webkit-columns: 3 100%;
+          -moz-columns: 3 100%;
+              columns: 3 100%;
+}*/
 
 .container {
   font-family: sans-serif;
   line-height: 15px;
-  color: #4723DA;
+  color: cornflowerblue;
   margin: 0 45px 0 45px;
   min-width: 600px;
   font-size: 23pt;
   font-style: normal;
   letter-spacing: normal;
+}
+
+.main {
+
+       webkit-columns: 3 100%;
+         -moz-columns: 3 100%;
+             columns: 3 100%;
 }
 
 .clearfix {
@@ -48,12 +59,13 @@ h1 {
 }
 
 
-@font-face {
-  src: url();
-}
 
 h3.cbp-nttrigger::before {
   font-family: icons;
   content: "&#8426;";
   speak: none;
 }
+
+/* Border radius will round out the corners of the box
+    This will be needed for the add to cart button
+*/
