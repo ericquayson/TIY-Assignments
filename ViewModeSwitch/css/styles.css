@@ -70,10 +70,15 @@ ul > li {
   background-color: white;
   padding-bottom: 3%;
 }
- Product-price
+ /* Product-price */
+
 li.cbp-vm-price {
   color: black;
   font-size: 15%;
   padding-top: 2%;
   box-sizing: border-box;
 }
+
+/* Border radius will round out the corners of the box
+    This will be needed for the add to cart button
+*/

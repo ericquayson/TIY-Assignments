@@ -1,60 +1,116 @@
-.main {
+/* Do Not forget to make this web app responsive and nicely designed
+ Currently I need to layout the columns on the page; get the color scheme
+ down pact; Also round out the submit button. */
+body {
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  font-size: 16pt;
+  font-weight: bold;
+  letter-spacing: .2em;
+  text-align: left:
+  padding-right: 5px;
   background-color: #47A3DA;
-  margin-left: 70px;
-  margin-right: 70px;
-  margin-top: auto;
-  font-family: cursive;
+  color: white;
+}
+
+div {
+  display: block;
+}
+.main {
+  font-family: normal;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: .4px;
+  background-color: #47A3DA;
+  display: block;
+  margin: auto 70px 0 20px;
   min-width: 700px;
   /* this will help the sizing of the webpage for different browsers */
   -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
            box-sizing: border-box;
-  font-size: 20px;
-}
-
-label {
-  color: white;
-  border: solid black 5px;
-  padding-left: 10px;
-
 
 }
 
-/*:focus {outline: none;}*/
-
+/* Working with the main header on the page */
 h1 {
-  padding-left: 300px;
+  font-size: 30pt;
+  font-weight: 150;
+  text-align: left;
+  letter-spacing: .5px;
   min-width: 600px;
-  color: #47A3DA;
-  line-height: normal;
+  background-color: #47A3DA;
+  color: white;
 }
 
-form {
-  background-color:
+/* Working on the nagivation bar */
+
+nav {
+  text-align: right;
+  padding-bottom: 20px;
+  background-color: #47A3DA;
 }
 
-
-box {
-  height: 165px;
-  width: auto;
-  border:
+a {
+  color: white;
+  text-decoration: none;
+  padding:
 }
 
-position {
+a.bp-icon-prev:nth-child(1) {
+  font-family: icons;
+  content: "&#xe000;";
+
+}
+
+.bp-icon-prev::hover {
+  content: ""
+}
+
+.cbp-mc-form label {
   display: block;
+  width: 10%;
+  height: 10px:
+  border: solid white 10px;
+  padding: 10px 10px 10px 10px;
+  color: white;
+}
+
+
+/* Styling the input text on the page */
+input {
+
+  width: 20%;
+  height: 2.5em;
+  background-color: #47A3DA;
+  border-style: white solid 2px;
+  font-size: 10pt;
+  color: #000;
+
+}
+
+/* :focus {outline: none;} */
+
+input:focus {
 
 }
 
 .cbp-mc-form {
   line-height: 70px;
   text-align: left;
+  padding-top: 20px;
   padding-left: 16px;
 
 }
+.cbp-mc-form > label {
+  height: 50em;
+}
 
 .cbp-mc-submit {
-  line-height: normal;
-  color: inherit;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
+  letter-spacing: .4px;
+  line-height: normal;
+  border-radius: 1em;
+  color: white;
+
 }

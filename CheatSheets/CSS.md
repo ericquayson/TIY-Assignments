@@ -2,10 +2,10 @@
 
 ## Properties
 
-* `display` property is used for controlling layout. Every element on the DOM has a +
-   has a default display value. `block` and `inline` are typical default display Properties
+* `display` property is used for controlling the layout. Every element on the DOM has a +
+   a default display value. `block` and `inline` are typical default display Properties
 
-* `display: block` -- My width is sized by my parent and I        have widths and heights set on me. My height is determined by my content. block-level elements starts on a new line and stretches left and right.
+* `display: block` -- My width is sized by my parent and I have widths and heights set on me. My height is determined by my content. block-level elements starts on a new line and stretches to the end of the webpage to the left and right.
 * `display: inline` -- My width and height are determined by my content and widths and height dont do anything to me. Think of me like a word flowing in a paragraph. Specifically `inline` elements can can wrap around text and not disrupt the flow
 * `display: inline-block` -- I am the same as block except my widths are determined by my content.
     + `inline-block` elements are treated more or less as text.
