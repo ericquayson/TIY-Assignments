@@ -2,21 +2,27 @@
     on the whole page needs to go under this .container
 */
 
+body {
+  color: #47A3DA;
+}
+
 .container {
-  background-color: white;
-  margin: 0 60px 0 60px;
   font-size: 19pt;
   font-family: lato;
   font-color: indigo;
   top: 20%;
-  border-style: solid;
+  margin: 0 60px 0 60px;
   box-sizing: border-box;
-  border-color: #47A3DA;
+  background-color: white;
+}
+ul {
+  box-sizing: border-box;
+  border: #47A3DA solid 2px;
 
 }
-
 title {
   color: #47A3DA;
+
 
 }
 
@@ -29,8 +35,61 @@ h3.cbp-vm-title {
   font-family: sans-serif;
 }
 
-h1 {
+.cbp-vm-price {
+  font-style: italic;
+  font-size: 20pt;
+  color: #5D6666;
+
+}
+
+.cbp-vm-details {
+  font-weight: 200;
+  font-family: 'Lato'
+  font-size: 10pt;
+  letter-spacing: normal;
   text-align: center;
+  padding-top: 30%;
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  margin-left: 2px;
+  margin-right: 2px;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+div.cbp-vm-options {
+  display: block;
+  box-sizing: border-box;
+  border-bottom: #47A3DA solid 3px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  text-align: right;
+
+}
+
+.cbp-vm-view-grid ul li {
+
+  text-align: center;
+  padding-top: 20px;
+
+}
+
+li {
+  color: white;
+  font-size: 100pt;
+}
+
+h1 {
+  font-weight: 300;
+  font-style: normal;
+  font-size: 25pt;
+  text-align: left: 0;;
+  letter-spacing: .3px;
   padding-bottom: 7%;
   color: #47A3DA;
 
@@ -39,18 +98,46 @@ h1 {
     instead of the text
 */
 
+.cbp-vm-grid {
+  padding-top: 200px;
+}
+.cbp-vm-icon.cbp-vm-grid {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: block;
+  box-sizing: border-box;
+
+}
+/*.cbp-vm-icon.cbp-vm-grid::before {
+  float: left;
+  font-family: icons;
+  content: "\f00a";
+  height: 35px;
+  width: 35px;
+  box-sizing: border-box;
+  text-align: right;
+  color: #47A3DA;
+  text-decoration: none;
+}*/
+
 nav {
   float: right;
   box-sizing: border-box;
+
 }
 
 .cbp-vm-icon.cbp-vm-add {
   background-color: #47A3DA;
   font-size: 13pt;
+  font-weight: lighter;
+  color: white;
   height: 25%;
   width: 25%;
-  padding-top: 10%;
-
+  margin-left: 2px;
+  padding-top: 7px;
+  padding-bottom: 5%;
+  border-radius: 5px;
+  float: left;
 }
 
 /* Code for getting icons to show */
@@ -63,20 +150,28 @@ nav.bp-icon:before {
 
 /* selecting the overall element for the product */
 ul > li {
-
-  text-align: center;
-  color: #47A3DA;
+  display: block;
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
   font-size: 15px;
+  color: #47A3DA;
   background-color: white;
   padding-bottom: 3%;
+
 }
  /* Product-price */
 
-li.cbp-vm-price {
-  color: black;
-  font-size: 15%;
+ul li.cbp-vm-price {
+  font-weight: bold;
+  font-size: 15pt;
   padding-top: 2%;
   box-sizing: border-box;
+  color: black;
+}
+
+.bp-icon {
+  text-decoration: none;
 }
 
 /* Border radius will round out the corners of the box
