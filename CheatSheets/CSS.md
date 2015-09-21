@@ -3,12 +3,15 @@
 ## Properties
 
 * `display` property is used for controlling the layout. Every element on the DOM has a +
-   a default display value. `block` and `inline` are typical default display Properties
+   a default display value. `block` and `inline` are typical default `display` Properties
 
-* `display: block` -- My width is sized by my parent and I have widths and heights set on me. My height is determined by my content. block-level elements starts on a new line and stretches to the end of the webpage to the left and right.
-* `display: inline` -- My width and height are determined by my content and widths and height dont do anything to me. Think of me like a word flowing in a paragraph. Specifically `inline` elements can can wrap around text and not disrupt the flow
+* `display: block` -- My `width` is sized by my parent and I have widths and heights set on me. My height is determined by my content. block-level elements starts on a new line and stretches to the end of the webpage to the left and right.
+
+* `display: inline` -- My `width` and `height` are determined by my content and widths and height dont do anything to me. Think of me like a word flowing in a paragraph. Specifically `inline` elements can can wrap around text and not disrupt the flow
+
 * `display: inline-block` -- I am the same as block except my widths are determined by my content.
     + `inline-block` elements are treated more or less as text.
+
 * `display: none` -- commonly used with JavaScript to hide and show elements without deleting or remaking them
 
 ### Difference between `display: none` and `visibility: hidden`
@@ -18,13 +21,21 @@
 * `visibility: hidden` will render the element as if it still does exist on the page. This element will take up room on the webpage
 
 
-#### notes
+#### Notes
+
+  ================== Main Concept for CSS ===========
+
++ Inheritance > Order > Specificity
+
+  * The order of which the styles are listed in the css folder matters.
+
++ When applying styles, make sure to apply global styles on the webpage to the `body` tag. For example, `box-sizing`, `font-family`, `font-size`,
 
 + setting the width of a `block` element will prevent the element from stretching to the corners of the right and left of the webpage
 
 + Three Properties that alter layout display, position and float
 
-### Height and width
+### Height and Width
 
       * there are several different values that can be passed for a value. percentages, auto and any possible unit of measure
 
@@ -69,6 +80,12 @@
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+
+  use this in workable code for columns
+
+  -webkit-column-count: 3;
+    -moz-column-count: 3;
+      column-count: 3;
 
 
 + `position: static` -- is a default value and is not positioned in any special way. A `static` element is said to be not positioned and an element with its position set to anything else is said to be positioned
@@ -202,7 +219,7 @@ The text color of an element and its decorations (??)
 
 + `color` -- used to set the color of the text
 
-+ `text-align` - used to set the horizontal alignment of a     text
++ `text-align` - used to set the horizontal alignment of a text
 
         * `left`, `right`, `justified` are possible values
 
@@ -219,9 +236,11 @@ The text color of an element and its decorations (??)
 
 + `text-decoration` property is a shorthand and can use the values of each of the three longhand properties: `text-decoration-line`, `text-decoration-color`,  `text-decoration-style`
 
-+ `text-transform` -- inhert, UPPERCASE
++ `text-transform` -- inherit, UPPERCASE
 
 ### Font Properties
+
++ `font` -- shorthand for the other properties
 
 + `font-family` -- can be assigned by a specific font name or generic `font-family`
       * syntax: font-family: [[<font-family> | <generic-family>],]
@@ -234,8 +253,6 @@ The text color of an element and its decorations (??)
 
 + `font-size` -- modifies the size of the displayed font. Default value is `medium`. Possible values: `xx-small`, `x-small`, `small`, `medium`, `large`, `x-large`, `XX-large`, percentages, length, relative sizing and etc
 
-+ `font` -- shorthand for the other properties
-
 + `@font-face` -- helps with using third party fonts (a tip to remember once you use this selector it is good to declare `Regular`, `italic`, `bold`, `bolditalic`)
 
 ### Line Properties
@@ -244,4 +261,19 @@ The text color of an element and its decorations (??)
       * default value: `normal`
       * possible values: any measurement
 
-+
+
+### Media Queries
+
+  + Just observing media queries, they look like conditional statements like the `if` statements
+
+  + Typically, professionals use one giant stylesheet and will create chucks within the stylesheet and then         will use the media queries that will be applied within that specific viewport
+
+  + Essentially, I want to design Mobile-first (mobile does not need any media queries), Secondly, Tablet-first will be given a `min-width` and then lastly, Desktop-First will be designed because it takes up the most real estate)
+
+============ Things to be Mindful for ============
+
+  + Mobile-first -- font size should be larger
+  + Desktop-first -- font size should be larger
+  + max-width should be applied for Tablet
+  + Min-width should be applied for Tablet
+  + Min-width should be applied for Desktop

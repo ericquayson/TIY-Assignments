@@ -74,11 +74,8 @@ a {
   padding:
 }
 
-a.bp-icon-prev:nth-child(1) {
-  font-family: icons;
-  content: "&#xe000;";
+/* use 'fontawesome' */
 
-}
 
 .bp-icon-prev::hover {
   content: ""
