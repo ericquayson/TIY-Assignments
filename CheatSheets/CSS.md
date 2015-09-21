@@ -2,13 +2,14 @@
 
 ## Properties
 
-* `display` property is used for controlling layout. Every element on the DOM has a +
-   has a default display value. `block` and `inline` are typical default display Properties
+* `display` property is used for controlling the layout. Every element on the DOM has a +
+   a default display value. `block` and `inline` are typical default display Properties
 
-* `block` -- block-level elements starts on a new line and stretches left and right
-* `inline` -- `span` is a common inline element. Specifically inline elements can +
-              can wrap around text and not disrupt the flow
-* `none` -- commonly used with JavaScript to hide and show elements without deleting or remaking them
+* `display: block` -- My width is sized by my parent and I have widths and heights set on me. My height is determined by my content. block-level elements starts on a new line and stretches to the end of the webpage to the left and right.
+* `display: inline` -- My width and height are determined by my content and widths and height dont do anything to me. Think of me like a word flowing in a paragraph. Specifically `inline` elements can can wrap around text and not disrupt the flow
+* `display: inline-block` -- I am the same as block except my widths are determined by my content.
+    + `inline-block` elements are treated more or less as text.
+* `display: none` -- commonly used with JavaScript to hide and show elements without deleting or remaking them
 
 ### Difference between `display: none` and `visibility: hidden`
 
@@ -28,6 +29,7 @@
       * there are several different values that can be passed for a value. percentages, auto and any possible unit of measure
 
 + `max-width` will set the `max-width` for a given element. Additionally, it will prevent the element from getting any larger than that given size
+
 
 
 + `min-width` will set the min width for a given element. Additionally, it will prevent the element from getting any smaller than the given size
@@ -79,6 +81,8 @@
 
 + `position: absolute` -- (trickery) will position the element relative to the nearest positioned ancestor instead of `relative` to the viewport.
 
++ When an element is positioned, it is laid out according to whichever properties `top`, `bottom, `left, and `right` it has set
+
 + `float` -- is intended for wrapping text around images (the width of the element changes and other adjacent elements... move)
 
    * `clear` property controls the behavior of floats. Under the `clear` property one can use `left` or `right` to clear the element that is being floated or one can use `both`
@@ -91,13 +95,55 @@
 
 
 
-#### `div` notes
+####  Notes
+
+* Transformed elements are treated as positioned even if they are statically positioned
 
 * `div` is a block-level element. This means that `div`s start on a new line and +
   stretch as far to the left and the right
 
+* Pseduo-element content does not appear in the DOM. Never use pseuduo elements to generate content that is critical to the usability or accessibility of your pages
 
-### [`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
+* Common color mistake is using a gray (e.g `#ccc`) when the best practice is to use black with an alpha (e.g rgba(0, 0, 0.2)). Use this when I am working with `box-shadow`
+
+        example `box-shadow: 0 .125em .5em rgba(0, 0,  0.2)`
+
+
+### color
+
++ Color does not render the same cross browsers and devices
+    * type of devices
+    * distance and angle from the eye
+    * quality of display (number of colors it can render, accuracy of reproduction, supported viewing angle, maximum contrast)
+    * lighting conditions (inside vs. outside, day vs. night)
+    * visions of viewer (corrective lenses, visual impairments, colorblindness)
+
+### Questions that I need to ask myself when choosing colors
+
+     + Do I want to shock people? Do you want to put them at ease? Do you want people to trust you? Do you want them to be excited? Do you want to motivate people to take action?
+
+ [`color`](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
+
+## status classes
+
++ Many different apps use this or a similar mapping
+
+  `#428bca`-- primary
+  `#dff08d8` -- success
+  `#d9edf7` -- info
+  `#fcf8e3` -- warning
+  `#f2dede` -- danger
+
+ + consistently using these colors whenever it calls for them, will create a pattern within the user so he or she will become used to the patterned and more importantly, your design pattern will be reinforced
+ + Typically, designers try to stick with three main colors to employ when designing. This is called a triads
+
+## Resources for choosing color scheme
+
++ http://paletton.com/
+
++ http://tympanus.net/codrops/2012/09/17/build-a-color-scheme-the-fundamentals
+
++
 
 The text color of an element and its decorations (??)
 
@@ -173,6 +219,8 @@ The text color of an element and its decorations (??)
 
 + `text-decoration` property is a shorthand and can use the values of each of the three longhand properties: `text-decoration-line`, `text-decoration-color`,  `text-decoration-style`
 
++ `text-transform` -- inhert, UPPERCASE
+
 ### Font Properties
 
 + `font-family` -- can be assigned by a specific font name or generic `font-family`
@@ -182,11 +230,13 @@ The text color of an element and its decorations (??)
 
 + `font-variant` -- determines if the font is to display in normal or small caps. Default value is normal
 
-+ `font-weight` -- it specifies the weight of the font. Values that are possible values `bolder` and `lighter` and `bolder` and 100, 200, 300, 400, 500, 600, 700, 800, 900
++ `font-weight` -- it specifies the weight of the font. Values that are possible values `bolder` and `lighter` and `bolder` and 100, 200, 300, 400, 500, 600, 700, 800, 900 (use this property sparingly. This is good for bold backgrounds start around `font-weight: 200` or `300` and this property can get a bit funky with `lowercase` and `uppercase` this property tends to jam letters together so you have to use `letter-spacing: .4em` and usually with `letter-spacing` it is good to use very small measurements but you can always break this rule)
 
 + `font-size` -- modifies the size of the displayed font. Default value is `medium`. Possible values: `xx-small`, `x-small`, `small`, `medium`, `large`, `x-large`, `XX-large`, percentages, length, relative sizing and etc
 
 + `font` -- shorthand for the other properties
+
++ `@font-face` -- helps with using third party fonts (a tip to remember once you use this selector it is good to declare `Regular`, `italic`, `bold`, `bolditalic`)
 
 ### Line Properties
 
