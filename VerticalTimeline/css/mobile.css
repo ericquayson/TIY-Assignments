@@ -1,4 +1,4 @@
-/* Responsive layout for iPhones */
+/* Responsive layout */
 
 /* ----------- iPhone 4 and 4S ----------- */
 
@@ -22,33 +22,6 @@
 @media only screen
   and (min-device-width: 320px)
   and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-
-}
-
-/* ----------- iPhone 5 and 5S ----------- */
-
-/* Portrait and Landscape */
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* Portrait */
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-}
-
-/* Landscape */
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
 
@@ -107,5 +80,37 @@
   and (max-device-width: 736px)
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) {
+
+}
+
+body {
+
+}
+
+div {
+
+}
+
+.main {
+
+}
+
+h1 {
+
+}
+
+nav {
+
+}
+
+.bp-icon {
+
+}
+
+.cbp-mc-form {
+
+}
+
+.cbp-mc-submit {
 
 }
