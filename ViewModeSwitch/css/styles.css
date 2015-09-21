@@ -147,6 +147,11 @@ nav.bp-icon:before {
   font-family: icon;
 }
 
+/* Images */
+
+  img {
+    
+  }
 
 /* selecting the overall element for the product */
 ul > li {

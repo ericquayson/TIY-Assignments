@@ -3,15 +3,9 @@ Make sure my CSS code is orangized by sub-sections and well-commented
 which section I am working on
 Font url to work with */
 
-/* @import
+ @import url();
   url()
 
- .main {
-
-        webkit-columns: 3 100%;
-          -moz-columns: 3 100%;
-              columns: 3 100%;
-}*/
 
 .container {
   font-family: 'Lato', serif;
@@ -26,9 +20,9 @@ Font url to work with */
 
 .main {
 
-       webkit-columns: 3 100%;
-         -moz-columns: 3 100%;
-             columns: 3 100%;
+       webkit-columns: 3;
+         -moz-columns: 3;
+             columns: 3;
 }
 
 .clearfix {

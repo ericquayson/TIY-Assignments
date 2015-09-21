@@ -1,4 +1,4 @@
-/* 
+/*
 ===========================Pseudo Code============================
 
 Create a function that is going to add and append the to do
@@ -12,7 +12,7 @@ Create a function that is going to add and append the to do
 			* add jQuery CDN to the HTML page
 
 	Task
-			* capture the `<input>` from the browswer
+			* capture the `<input>` from the browser
 			* print it to the console
 			* take a screenshot and include it in the issue
 			* I need an `addEventListener`
@@ -23,8 +23,22 @@ Create a function that is going to add and append the to do
 	'use strict';
 
 	// Your starting point. Enjoy the ride!
-	function function_name(argument) {
-		// body...
-	}
+
+
+var newTask = document.querySelector(".new-todo");
+
+			function addTask () {
+			var listOfTask = [newTask.value];
+			console.log(listOfTask);
+}
+
+newTask.addEventListener('click', addTask);
 
 })(window);
+
+// Me attempting to use jquery
+ //$(function () {
+ //   $('h3.cbp-nttrigger').click(function () {
+ //     $('ul.cbp-ntaccordion > li').toggle();
+ //   });
+ // });

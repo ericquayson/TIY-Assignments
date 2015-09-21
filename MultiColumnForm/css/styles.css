@@ -1,12 +1,29 @@
 /* Do Not forget to make this web app responsive and nicely designed
  Currently I need to layout the columns on the page; get the color scheme
  down pact; Also round out the submit button. */
+
+
+/* importing icons */
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@font-face {
+  font-family: 'bpicons';
+  src:url('../fonts/bpicons/bpicons.eot');
+  src:url('../fonts/bpicons/bpicons.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/bpicons/bpicons.woff') format('woff'),
+    url('../fonts/bpicons/bpicons.ttf') format('truetype'),
+    url('../fonts/bpicons/bpicons.svg#bpicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body {
   font-family: 'Lato', Calibri, Arial, sans-serif;
   font-size: 16pt;
   font-weight: bold;
   letter-spacing: .2em;
-  text-align: left:
+  text-align: left;
   padding-right: 5px;
   background-color: #47A3DA;
   color: white;
@@ -15,6 +32,7 @@ body {
 div {
   display: block;
 }
+
 .main {
   font-family: normal;
   font-size: 20px;
