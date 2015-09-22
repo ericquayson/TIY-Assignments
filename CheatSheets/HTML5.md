@@ -80,6 +80,16 @@ A generic page division that should only be used if no other, more semantic choi
 
 + `<div>` -- this tag allows for the developer to create a container for the flow of the content.
 
+### Form elements
+
++ `<li>` -- list element.
+
++ `<dt>` -- this tag refers to a term in a definition list
+
++ `<ul>` -- unordered list element
+
+### List elements
+
 ### Media
 
 + `<img>` -- this tag allows for me to embed an image into the HTML doc
