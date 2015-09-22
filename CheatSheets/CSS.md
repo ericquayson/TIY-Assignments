@@ -119,7 +119,7 @@
 * `div` is a block-level element. This means that `div`s start on a new line and +
   stretch as far to the left and the right
 
-* Pseduo-element content does not appear in the DOM. Never use pseuduo elements to generate content that is critical to the usability or accessibility of your pages
+* Pseduo-element content does not appear in the DOM. Never use pseduo elements to generate content that is critical to the usability or accessibility of your pages
 
 * Common color mistake is using a gray (e.g `#ccc`) when the best practice is to use black with an alpha (e.g rgba(0, 0, 0.2)). Use this when I am working with `box-shadow`
 
@@ -191,29 +191,29 @@ The text color of an element and its decorations (??)
       * `a` - will select the a tags
       * `ul` - will select the unordered list
 
-+ X:link - targets all anchor tags which have ye to be clicked
++ `X:link` - targets all anchor tags which have ye to be clicked
 
-+ X:visited - allows us to apply specific styling to only the anchor tags on the page which have been clicked on, or visited
++ `X:visited` - allows us to apply specific styling to only the anchor tags on the page which have been clicked on, or visited
 
-+ X > Y - will select the direct children of that element
++ `X > Y` - will select the direct children of that element
 
-+ X ~ Y - will select the first element that is immediately preceded by the former selector
++ `X ~ Y` - will select the first element that is immediately preceded by the former selector
 
-+ X[title] -- attributes selector (this example will select the element that has a title)
++ `X[title]` -- attributes selector (this example will select the element that has a title)
 
-+ X:checked -- this pseudo class will only target a user interface element that has been checked - like a radio button, or checkbox
++ `X:checked` -- this pseudo class will only target a user interface element that has been checked - like a radio button, or checkbox
 
-+ X:after -- the before and after pseduo classes are very helpful.
++ `X:after` -- the before and after pseduo classes are very helpful.
 
-+ X:hover -- will add an hover effect over that element
++ `X:hover` -- will add an hover effect over that element
 
-+ X:checked -- this pseudo class can be applied to any `<input type="radio">`, `<input type="checkbox">`, or `<option>` in a `<select>` element that is checked or toggled to an element
++ `X:checked` -- this pseudo class can be applied to any `<input type="radio">`, `<input type="checkbox">`, or `<option>` in a `<select>` element that is checked or toggled to an element
 
-+ X:enabled -- this represents an element enabled if it can be activated (e.g selected, clicked on or accept text input)
++ `X:enabled` -- this represents an element enabled if it can be activated (e.g selected, clicked on or accept text input)
 
-+ X:disabled -- this represents an element disabled if it can be deactivated
++ `X:disabled` -- this represents an element disabled if it can be deactivated
 
-+ X:empty
++ `X:empty`
 
 ### Text Properties
 
