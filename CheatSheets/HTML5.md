@@ -88,6 +88,16 @@ A generic page division that should only be used if no other, more semantic choi
 
 + `<ul>` -- unordered list element
 
++ `<menu>` -- represents a group of commands that a user can perform or activate.
+
++ `<form>` -- represents a document section that contains interactive controls to submit information to a web server
+
++ `<label>` --  represents caption for an item in a user interface.
+
++ `<fieldgroup>`
+
++ `<legend>` -- represents a caption for the content of its parent
+
 ### List elements
 
 ### Media
