@@ -94,11 +94,18 @@ A generic page division that should only be used if no other, more semantic choi
 
 + `<label>` --  represents caption for an item in a user interface.
 
-+ `<fieldgroup>`
-
 + `<legend>` -- represents a caption for the content of its parent
 
++ `<menu>` -- represents a group of commands that a user can perform or activate
+
++ `<dialog>` -- represents a dialogue box or other interactive component, such as an inspector or window
+
++ `<button>` -- represents a clickable button
+
++ `<keygen>` -- facilitate generation of key material, and submission of the public keys as part of an `HTML` form
+
 ### List elements
+
 
 ### Media
 
