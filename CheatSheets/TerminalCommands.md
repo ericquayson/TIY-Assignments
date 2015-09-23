@@ -15,7 +15,7 @@
 
   * browser-sync start --server --directory --files="index.html"
 
-+ this command will help me watch the files and will watch them and automatically update them
++ this command will help me watch my directory and will watch them and automatically update them
 
 + once I save my file, the browswer will automatically update for me
 
