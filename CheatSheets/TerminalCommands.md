@@ -1,5 +1,8 @@
 ## This Document will help me with terminal commands
 
+### Naming files, imgs, etc.
+
+* naming system: _projectname_filename_
 
 
 ### npm install
@@ -20,4 +23,4 @@
 ### Mocha and Chai
 
 
-### 
+###
