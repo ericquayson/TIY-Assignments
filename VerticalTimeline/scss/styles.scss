@@ -59,14 +59,16 @@ h1 {
 
 }
 
-/* Styling the nav */
+/* Styling the nav
 
 nav a {
   text-decoration: none;
   float: right;
 }
+*/
 
-nav   
+ /* extracted descendent selector */
+nav
     a {
       text-decoration: none;
       float: right;
