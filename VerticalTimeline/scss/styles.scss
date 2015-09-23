@@ -3,7 +3,11 @@
 body {
   padding-top: 3px;
   color: #47A3DA
+}
 
+.container {
+  box-sizing: border-box;
+  border: blue 4px dotted;
 }
 
 /* icons */
@@ -21,15 +25,23 @@ time {
   font-size: 25px;
   font-weight: lighter;
   font-style: normal;
+
+    time.cbp_tmtime {
+    font-size: 15pt;
+    color: #808080;
+  }
 }
 
+
+/*
+original code
 time.cbp_tmtime {
   font-family: 'Lato', sans-serif;
   color: #808080;
   font-size: 15pt;
   font-weight: lighter;
   font-stlye: normal;
-}
+} */
 
 time.cbp_tmtime.
 /* Main Container that hold most of the ino */
@@ -55,12 +67,20 @@ h1 {
 
 }
 
-/* Styling the nav */
+/* Styling the nav
 
 nav a {
   text-decoration: none;
   float: right;
 }
+*/
+
+ /* extracted descendent selector */
+nav
+    a {
+      text-decoration: none;
+      float: right;
+    }
 
 /* Styling of the header */
 
@@ -70,6 +90,10 @@ h2 {
   border-bottom: white solid 2px;
   text-decoration: none;
   padding-bottom: 3px;
+}
+
+li {
+
 }
 
 /* Main content */

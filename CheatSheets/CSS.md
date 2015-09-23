@@ -35,6 +35,8 @@
 
 + Three Properties that alter layout display, position and float
 
++ `!important` overrides the cascade 
+
 ### Height and Width
 
       * there are several different values that can be passed for a value. percentages, auto and any possible unit of measure
