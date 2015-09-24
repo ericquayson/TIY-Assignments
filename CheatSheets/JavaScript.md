@@ -23,7 +23,7 @@
 
 + operator - +=
 
-<<<<<<< HEAD
+
 multiple
 
 2 * 3
@@ -31,17 +31,16 @@ multiple
 + multiple
 
 + 2 * 3
->>>>>>> master
 
 + returns 6
 
-<<<<<<< HEAD
+
 operator - *=
 
 divide
 =======
 + operator - *=
->>>>>>> master
+
 
 + divide
 
@@ -49,11 +48,8 @@ divide
 
 + return 2.5
 
-<<<<<<< HEAD
-subtract
-=======
 + operator - /=
->>>>>>> master
+
 
 + subtract
 
@@ -91,25 +87,11 @@ subtract
 
 + NaN - Not a Number
 
-<<<<<<< HEAD
+
 Infinity -
 =======
 + Undefined - indicates that a variable is not defined before being called
->>>>>>> master
 
-+ Infinity -
-
-<<<<<<< HEAD
-Variables declared within Javascript can be known as Identifiers
-= allows you to assign a value to an identifiers
-delimitiers = " " or ' ' or ,
-
-Example of a 'bear' word = var foo = foo;
-
-+ -- catenation -- specifically, refer to strings and "smashingthemtogether"
-
-semicolon - is a statement operator
-=======
 
 + Variables declared within Javascript can be known as Identifiers
 + = allows you to assign a value to an identifiers
@@ -120,7 +102,7 @@ semicolon - is a statement operator
 + -- catenation -- specifically, refer to strings and "smashingthemtogether"
 
 + semicolon - is a statement operator
->>>>>>> master
+
 
 + Sometimes Javascript can be read from left to right or right to left (depending on hierarchy of the operations)
 
@@ -129,19 +111,13 @@ semicolon - is a statement operator
 + To invoke a function     ____();
                       function name
 
-<<<<<<< HEAD
-  weirdos operators: . ()
 
-  comparsion  operators: === (this means a strict comparsion which is best practice)
-
-  console.log -- is an unanimous function
-=======
  + weirdos operators: . ()
 
  + comparsion  operators: === (this means a strict comparsion which is best practice)
 
   + console.log -- is an unanimous function
->>>>>>> master
+
 
 ## Functions
 
@@ -155,24 +131,11 @@ semicolon - is a statement operator
     function functionName ( /* arguments go here */ ) {
       // body of function goes here
     }
-<<<<<<< HEAD
-// the start of the function definition
-function hello (name) {
-// the body of the function `hello`
- console.log("My name is " + " ")
-// the function innovocation
-} hello(eric);
-Once a function has been defined, it can be _invoked_ by...
-functionName();
 
-### `typeof` keyword
-
-The `typeof` keyword function determines which of the 4 primitive types that element could be
-=======
 + // the start of the function definition
 + function hello (name) {
 + // the body of the function `hello`
- + console.log("My name is " + " ")
++ console.log("My name is " + " ")
 + // the function innovocation
 + } hello(eric);
 + Once a function has been defined, it can be _invoked_ by...
@@ -181,7 +144,7 @@ The `typeof` keyword function determines which of the 4 primitive types that ele
 ### `typeof` keyword
 
 + The `typeof` keyword function determines which of the 4 primitive types that element could be
->>>>>>> master
+
 
 + However, beyond the four primitive types, `typeof` can tell you if the element `undefined` or `null` are objects
 
@@ -217,7 +180,7 @@ else if (condition3)
    statement3
 ...
 else
-   statementN
+   statement
 
    +There are multiple variations of what If statements can consist of
 
@@ -230,7 +193,7 @@ else
       if (condition3)
 ...
 
-While statements creates a loop that executes a specficied statement as long as the test condition `eval` to true.
+While statements creates a loop that executes a specified statement as long as the test condition `eval` to true.
 
 while (condition) {
   statement
@@ -280,19 +243,8 @@ var names = ["Eric", "Tee"];
  var newNames = names.push("Quan");
  // ["Eric", "Tee", "Quan"]
 
- + pop
 
-<<<<<<< HEAD
-## Removes the last element from the Array and returns that element
-
- * var lastName = names.pop(); //removes Quan from the end
- // ["Eric", "Tee"]
-
-## Removes the first element from the front of an Array and returns that element
-
- * var lastLastName = names.shift(); // remove Eric from the front
-=======
-## Remove from the end of an Array
+## Remove from the end of an Array `pop`
 
  var lastName = names.pop(); //removes Quan from the end
  // ["Eric", "Tee"]
@@ -300,44 +252,20 @@ var names = ["Eric", "Tee"];
 ## Remove from the front of an Array
 
  var lastLastName = names.shift(); // remove Eric from the front
->>>>>>> master
+
  // ["Tee"]
 
 ## Add to the front of an Array
 
-<<<<<<< HEAD
- * var lasttName = names.unshift("Teach") // adds Teach to the front of the array
-=======
- var lasttName = names.unshift("Teach") // adds Teach to the front of the array
->>>>>>> master
+
+ var lastName = names.unshift("Teach") // adds Teach to the front of the array
+
 
  // ["Teach", "Tee"]
 
  ## Find the index of an item in the Array
 
-<<<<<<< HEAD
- * names.push("Cecil");
- // push adds an element to the end of an Array
- // ["Teach", "Tee", "Cecil"]
 
- * var pos = names.indexOf("Tee");
- // 1
-
- ## Changes the content of an array by removing existing elements and/or adding new elements
-
-// the splice method takes two different parameters the start and deleteCount
-
- * var removedItem = names.splice(pos, 1); // this is how to remove an element
-
-// var randomItems = ["Teach", "Cecil", "Bill"]
-// var removedRandomItem = randomItems.splice(2, 0, "Word");
-
-// The code above reads the array randomItems has the method splice attached +
-// and will start the method at the position 2 in the array and then remove 0 elements +
-// but will insert the element Word in that position
-
- // ["Teach", "Cecil", "Bill", "Word"]
-=======
  names.push("Cecil");
  // ["Teach", "Tee", "Cecil"]
 
@@ -348,16 +276,13 @@ var names = ["Eric", "Tee"];
 
  var removedItem = names.splice(pos, 1); // this is how to remove an element
  // ["Teach", "Cecil"]
->>>>>>> master
+
 
 
 ## finding the length of the array
 
-<<<<<<< HEAD
- * names.length //2
-=======
- names.length //2
->>>>>>> master
++ names.length //2
+
 
 ## DOM
 
@@ -369,7 +294,7 @@ var names = ["Eric", "Tee"];
 
 #### A document object can be obtained from various APIs:
 
-`document` provides developers with a lot of functionality to maniuplate or extract things
+`document` provides developers with a lot of functionality to manipulate or extract things
 
  ### Document object Methods
 
@@ -384,7 +309,7 @@ var names = ["Eric", "Tee"];
 
 Most commonly, you work with the document the script is running in by using document in document's scripts
 
-`window.document` returns a reference to the document contanied in the window
+`window.document` returns a reference to the document contained in the window
 
 `window.location` returns a location object that contains information about the current URL
 
@@ -431,19 +356,11 @@ Most commonly, you work with the document the script is running in by using docu
 + An HTMLCollection provides the same methods as a NodeList and additionally a method called nameItem
 
 
-
-<<<<<<< HEAD
-## Event Bubbling
-
-> DOM elements can be nested inside each other. When the user clicks on the deepest
-> possible child element , the parent element or node can be triggered as well. The event > bubbling is the reason for the reaction.
-=======
-
 ## Event Bubbling
 
 
 DOM elements can be nested inside each other. When the user clicks on the deepest possible child element , the parent element or node can be triggered as well. The event bubbling is the reason for the reaction.
->>>>>>> master
+
 
 + There is concept called the `bubbling order` because an event bubbles from the
 + innermost element up through parents, like a bubble of air in the water
@@ -458,13 +375,7 @@ Captures down will start from the topmost element then one move into next elemen
 
 All handlers work on bubbling stage excepts addEventListener with last argument true, which is the only way to catch the event on capturing stage
 
-<<<<<<< HEAD
-### Event Methods
-=======
-
 ## Event Methods
-
->>>>>>> master
 
 * `Event.preventDefault`() – cancels the event (if it is cancelable)
 
@@ -476,10 +387,6 @@ All handlers work on bubbling stage excepts addEventListener with last argument 
 
 * `Dblclick` – event is rarely used
 
-<<<<<<< HEAD
-=======
-
->>>>>>> master
 ## Form Events
 
 Events triggered by actions inside of a HTML form (applies to almost all HTML elements, but is most used in form elements)
@@ -522,47 +429,32 @@ Events triggered by actions inside of a HTML form (applies to almost all HTML el
 + I have to be mindful for the browsers because sometimes they do not always agree
 + whether a change event should be fired for certain types of interaction
 
-<<<<<<< HEAD
-### Load and Unload events
-=======
 
 ### Load and Unload events
 
->>>>>>> master
 
 * `onload` event happens when the window and it’s dependent resources,  including images, scripts, styles are loaded
 Attaching an `onload` handler allows to execute the code when all DOM elements are rendered and the whole document is complete
 
-<<<<<<< HEAD
-* `DOMContentLoaded` is another event that can be triggered just  like `onload` it triggers when the HTML page is parsed and DOM tree is built. Developers made this event because they noticed that visitors have to wait for all images, external counters to completely load for onload to fire
-=======
+
 `DOMContentLoaded` is another event that can be triggered just  like `onload` it triggers when the HTML page is parsed and DOM tree is built. Developers made this event because they noticed that visitors have to wait for all images, external counters to completely load for onload to fire
 
 The onunload event happens when a window is closed or changes it’s location
 
 	The syntax is similar: window.onunload
 The `onbeforeunload` event is special, because it triggers before the window is closed or changes location
->>>>>>> master
+
 
 + The onunload event happens when a window is closed or changes it’s location
 
 + The syntax is similar: window.onunload
 + The `onbeforeunload` event is special, because it triggers before the window is closed + or changes location
 
-<<<<<<< HEAD
-+ Unlike unload, it can be used to cancel the change
-=======
+
 The event is useful, for example with working with documents. The web-application can check if the document is saved and ask the user if he really wants to leave without saving the job.
->>>>>>> master
+
 
 + To do so, the handler should return the text. Before unloading the window, the browser will output the returned text and ask the user, if he really want to leave the page
 
-<<<<<<< HEAD
-+ The event is useful, for example with working with documents. The web-application can check if the document is saved and ask the user if he really wants to leave without saving the job.
 
-### KeyboardEvent
-
-* KeyboardEvent objects describe a user interaction with the keyboard. Each event describes a key; the event type (keydown, keypress, or keyup) identifies what kind of activity was performed
-=======
 KeyboardEvent objects describe a user interaction with the keyboard. Each event describes a key; the event type (keydown, keypress, or keyup) identifies what kind of activity was performed
->>>>>>> master
