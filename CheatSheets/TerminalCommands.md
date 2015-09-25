@@ -23,4 +23,10 @@
 ### Mocha and Chai
 
 
-###
+### Github
+
+* use git clean --dry-run (will be a practice before actually cleaning the directory)
+
+* `git clean --force .` (will remove the ALL files that are not wanted within that specific project) use this command to take care of alot of files
+
+* git add -u (will remove the deleted files from my folder off of my terminal line)
