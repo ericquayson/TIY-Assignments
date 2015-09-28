@@ -4,6 +4,7 @@
 * whenever you click on a specific page, your user should know that he or she is on that page. In the nav bar, there should be an underline on that page
 * fixed navagation bar (some type of hover effect)
 * on landing pages (use hero or jumbtron)
+  + sometimes with the hero img there can be text that lets the user know the mission of the company... in white text.
 * don't use gradients
 
 
@@ -11,7 +12,7 @@
 
 * www.siteinspire.com
 * www.dribble.com
-* 
+* www.thisiscolossal.com
 
 
 ## Initially
@@ -22,6 +23,16 @@
 * look up UI patterns for to look at the pro and cons for common user interactions
 * don't try to switch common user journeys because of some new cool feature (USER STORIES)
 * don't ever center paragraphs on a webpage
+
+## Design Principles for Specific Industries
+
+/* Research the known differences in these industries as far as the landing page, general functionality, hovering effects,
+
+### Retail
+
+### Transportation
+
+### Online publication
 
 ## Font
 
