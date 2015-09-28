@@ -110,3 +110,33 @@ A generic page division that should only be used if no other, more semantic choi
 ### Media
 
 + `<img>` -- this tag allows for me to embed an image into the HTML doc
+
+### Table elements
+
++ `<table>` -- represents data in two dimensions or more
+
++ `<caption>` -- represents the title of a table
+
++ `<col>` -- defines a column within a table and is used for defining common semantics on all common cells
+
++ `<colgroup>` -- defines a group of columns within a table
+
++ `<tbody>` - table body element
+
++ `<thead>` - defines a  set of rows defining the head of the columns of the table
+
++ `<tfoot>` - defines a set of rows summarizing the columns of the table
+
++ `<tr>` -- defines a row of cells in a table. Those can be a mix of `<td>` and `<th>` elements
+
++ `<td>` -- defines a cell of a table that contains data. It participates the table model
+
++ `<th>` -- defines a cell that is a header for a group of cells of a table. The group of cells that the header refers to is defined by the scope and headers attribute
+
+      * scope attribute
+          + row -- which means that the header relates to all cells in the row that this element belongs to
+          + col -- which means that the header relates to all cells in the column that this element belongs to
+          + rowgroup -- which means that the header relates to all remaining cells in the row group that this element belongs to. The remaining cells are either those to the right of this element, or to his left depending of the value of dir attribute defined on the `<table>` element
+          + colgroup, which means that the header relates to all remaining cels in the column group that the element belongs to
+          + auto
+      * header attribute -- this attributes a list of space-separated strings, each corresponding to the id attribute of the `<th>` elements that applies to this element
