@@ -1,25 +1,21 @@
 
 // selecting the corresponding element to that ID!
 
-var firstName = document.getElementById("first_name");
-var lastName = document.getElementById("last_name");
-var email = document.getElementById("email");
-var country = document.getElementById("country");
-var bio = document.getElementById("bio");
-var text = document.getElementById("phone");
-var affiliations = document.getElementById("affiliations");
-var occupation = document.getElementById("occupation");
-var catName = document.getElementById("cat_name");
-var gadget = document.getElementById("gadget");
-var talent = document.getElementById("talent");
-var drink = document.getElementById("drink");
-var power = document.getElementById("power");
-var weapon = document.getElementById("weapon");
-var comments = document.getElementById("comments")
+var firstName = document.getElementById("label#firstName");
+var lastName = document.getElementById("label#last_name");
+var email = document.getElementById("label#email");
+var country = document.getElementById("label#country");
+var bio = document.getElementById("label#bio");
+var text = document.getElementById("label#phone");
+var affiliations = document.getElementById("label#affiliations");
+var occupation = document.getElementById("label#occupation");
+
 
 //button that will submit the events
 
-var sumbitButton = document.querySelector("input.cbp-mc-submit");
+var submitButton = document.querySelector("input.cbp-mc-submit");
+
+  console.log(submitButton);
 
 var clickEvent = function (Event) {
   var storeData = [
@@ -30,13 +26,7 @@ var clickEvent = function (Event) {
     text.value,
     affiliations.value,
     occupation.value,
-    catName.value,
-    gadget.value,
-    talent.value,
-    drink.value,
-    power.value,
-    weapons.value,
-    comments.value
+
   ];
   // In the function you create to that will capture that css selector, you have to make sure that you +
   // you have to add an EventListener that hears the click event and calls back a function +
@@ -52,6 +42,48 @@ var clickEvent = function (Event) {
   // })
   // console.log(storeDate);
 };
+
+/* jQuery  */
+
+$(function () {
+  // firstName capture
+  $('label#firstName').on('input', function () {
+
+  })
+
+  $('label#lastName').on('input', function () {
+
+
+  })
+
+  $('label#email').on('input', function () {
+
+
+  })
+
+  $('label#country').on('input', function () {
+
+
+  })
+
+  $('label#male').on('input', function () {
+
+
+  })
+
+  $('label#female').on('input', function () {
+
+
+  })
+
+  $('label#profession').on('input', function () {
+
+
+  })
+
+
+})
+
 
 firstName.addEventListener('input', clickEvent);
 lastName.addEventListener('input', clickEvent);
