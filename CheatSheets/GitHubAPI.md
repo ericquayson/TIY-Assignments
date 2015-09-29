@@ -4,7 +4,7 @@
 
 > Do I need to authenticate?
 
-+ Yes, you should always authenticate. This prevents accidental leakage of private repositories to unauthorized users.
++ Technically, you don't, but you shoud always have authentication. This prevents accidental leakage of private repositories to unauthorized users.
 
 > What can I do with an unauthenticated request?
 
@@ -35,3 +35,18 @@ You can't allow access to the user from who the request is coming from
 
 . . .
 `GET /users/:username`
+
+> The repository listing for a specific user?
+
+`GET /users/:username repos`
+
+> The recent, public activity for a specific user?
+
+ `GET /repositories`
+
+
+`GET /users/:username/subscriptions`
+
+> Is there a limit to the number of requests I can make?
+
+There is no limit to the amount of request that can be made. I've done some research and have seen that severs can get up to 65,000 request. 
