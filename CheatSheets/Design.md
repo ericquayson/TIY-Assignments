@@ -6,6 +6,8 @@
 * on landing pages (use hero or jumbtron)
   + sometimes with the hero img there can be text that lets the user know the mission of the company... in white text.
 * don't use gradients
+* don't make users think (try the down the hall method and let someone try to use your website)
+
 
 
 # Resources
