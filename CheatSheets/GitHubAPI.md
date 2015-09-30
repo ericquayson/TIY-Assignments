@@ -4,7 +4,7 @@
 
 > Do I need to authenticate?
 
-+ Technically, you don't, but you shoud always have authentication. This prevents accidental leakage of private repositories to unauthorized users.
++ Technically, you don't, but you should always have authentication. This prevents accidental leakage of private repositories to unauthorized users.
 
 > What can I do with an unauthenticated request?
 
@@ -52,3 +52,18 @@ You can't allow access to the user from who the request is coming from
 + There is no limit to the amount of request that can be made. I've done some research and have seen that severs can get up to 65,000 request.
 
 + API endpoint is any URL that the API understands
+
+* What are the endpoints for fetching...
+  * the profile data for a user?
+  * the organizations a user belongs to?
+  * the repositories a user has created?
+  * a filtered list of repositories?
+  * a sorted list of repositories?
+  * public events for a user?
+* When fetching public events for a user...
+  * How many results are returned by default?
+  * What limitations exist on fetching _more_ results?
+  * What is the basic structure of the results?
+  * What fields are included in each result?
+  * What are the data types for each field?
+  * What are some of the different values for the `type` field?
