@@ -55,15 +55,26 @@ You can't allow access to the user from who the request is coming from
 
 * What are the endpoints for fetching...
   * the profile data for a user?
+  `GET "https://api.github.com/users/ericquayson"`
   * the organizations a user belongs to?
+  `GET "https://api.github.com/users/ericquayson/orgs"`
   * the repositories a user has created?
+  `GET "https://api.github.com/users/ericquayson/repos"`
   * a filtered list of repositories?
+  `GET `
   * a sorted list of repositories?
   * public events for a user?
+  `GET "https://api.github.com/users/ericquayson/events{/privacy}"`
 * When fetching public events for a user...
   * How many results are returned by default?
+  + I used this link and it returned a lot of arrays and dictionaries  `https://api.github.com/users/ericquayson/received_events`
   * What limitations exist on fetching _more_ results?
   * What is the basic structure of the results?
+    + It will identify the user, the repo that the event is occurring, the payload, labels, and etc..
+  + arrays within arrays (dictionaries)
   * What fields are included in each result?
+    + actor, repo, payload, labels, state, comment
   * What are the data types for each field?
+    + some are booleans and strings that are links
   * What are some of the different values for the `type` field?
+    + `type` can either describe a user or the event 
