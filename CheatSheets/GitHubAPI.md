@@ -77,4 +77,14 @@ You can't allow access to the user from who the request is coming from
   * What are the data types for each field?
     + some are booleans and strings that are links
   * What are some of the different values for the `type` field?
-    + `type` can either describe a user or the event 
+    + `type` can either describe a user or the event
+    * How can I use the Github API to...
+    * get all the comments for a particular issue?
+    * add a comment to an issue?
+  * How can I use the jQuery API to...
+    * get the HTML contents of an element?
+    * create a _new_ HTML element?
+    * add an HTML element to the page?
+  * How can I use the Lodash API to...
+    * replace placeholders with values from an object?
+    * repeat code for every item of an array
