@@ -80,11 +80,17 @@ You can't allow access to the user from who the request is coming from
     + `type` can either describe a user or the event
     * How can I use the Github API to...
     * get all the comments for a particular issue?
+    `GET /repos/:owner/:repo/issues/:number/comments`
     * add a comment to an issue?
+    `POST /repos/:owner/:repo/issues/:number/comments`
   * How can I use the jQuery API to...
     * get the HTML contents of an element?
+    `GET `
     * create a _new_ HTML element?
+    `POST`
     * add an HTML element to the page?
+    `POST `
   * How can I use the Lodash API to...
     * replace placeholders with values from an object?
     * repeat code for every item of an array
+query
