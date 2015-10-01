@@ -94,3 +94,18 @@ You can't allow access to the user from who the request is coming from
     * replace placeholders with values from an object?
     * repeat code for every item of an array
 query
+
+## Promises
+
+Promises are similar to event handlers, they allow for code to not be fired in order
+
+I've also noticed that Promises deal with success or failure of events.
+
+    * fulfilled -- the action relating to the promise succeeded
+    * rejected -- the action relating to the promise failed
+    * pending - hasn't fulfilled or rejected yet (this is not as commonly used)
+    * settled -- has fulfilled or rejected
+
+    * thenable -- describes an object that is promise-like, in that it has a then method.     The then function allows for you to to chain more then functions on to it. (Think of children telling stories... then this happened then that happened then this then that)
+
+jQuery has its own version of promises called Deferreds     
