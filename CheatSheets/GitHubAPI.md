@@ -77,4 +77,35 @@ You can't allow access to the user from who the request is coming from
   * What are the data types for each field?
     + some are booleans and strings that are links
   * What are some of the different values for the `type` field?
-    + `type` can either describe a user or the event 
+    + `type` can either describe a user or the event
+    * How can I use the Github API to...
+    * get all the comments for a particular issue?
+    `GET /repos/:owner/:repo/issues/:number/comments`
+    * add a comment to an issue?
+    `POST /repos/:owner/:repo/issues/:number/comments`
+  * How can I use the jQuery API to...
+    * get the HTML contents of an element?
+    `GET `
+    * create a _new_ HTML element?
+    `POST`
+    * add an HTML element to the page?
+    `POST `
+  * How can I use the Lodash API to...
+    * replace placeholders with values from an object?
+    * repeat code for every item of an array
+query
+
+## Promises
+
+Promises are similar to event handlers, they allow for code to not be fired in order
+
+I've also noticed that Promises deal with success or failure of events.
+
+    * fulfilled -- the action relating to the promise succeeded
+    * rejected -- the action relating to the promise failed
+    * pending - hasn't fulfilled or rejected yet (this is not as commonly used)
+    * settled -- has fulfilled or rejected
+
+    * thenable -- describes an object that is promise-like, in that it has a then method.     The then function allows for you to to chain more then functions on to it. (Think of children telling stories... then this happened then that happened then this then that)
+
+jQuery has its own version of promises called Deferreds     
