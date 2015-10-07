@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "Mocha"
+    "test": "Mocha",
+    "start": "browser-sync start --server --directory",
+    "sass":  "node-sass --output-style expanded --output src/css/ src/scss/main.scss"
   },
   "repository": {
     "type": "git",
