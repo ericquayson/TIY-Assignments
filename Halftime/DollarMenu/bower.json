@@ -1,0 +1,24 @@
+{
+  "name": "DollarMenu",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ericquayson/TIY-Assignments",
+  "authors": [
+    "ericquayson <ericquayson@github.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "lodash": "~3.10.1"
+  }
+}

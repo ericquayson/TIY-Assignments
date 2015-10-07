@@ -1,0 +1,19 @@
+{
+  "name": "McGriddles",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "Mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "TIY-Assignments"
+  },
+  "author": "eric",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.9.10",
+    "node-sass": "^3.3.3"
+  }
+}
