@@ -94,13 +94,60 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   main.container {
+     box-sizing: border-box;
+     margin: 0 10%;
+   }
 
+   a[href] {
+     display: inline-block;
+     padding: 1ex .5em;
+     position: relative;
 
+   }
 
+    .panels {
+      background-color: #6496ED;
+      padding-top: 2.5%;
+      padding-bottom: 2.5%;
+      display: none;
+      position: relative;
+      bottom: 15px;
+   }
 
+   nav {
+     padding-top: 200px;
+   }
 
+   [class*='tab'] {
+     display: inline-block;
+     padding: 1ex 2em;
+     text-decoration: none;
+     font-size: 13pt;
+     color: #808080;
+     border-bottom: #FFF solid 2px;
+     bottom: -1px;
+   }
 
+   article {
+     h3 {
+       padding-left: 5%;
+       font-size: 22pt;
+       font-weight: lighter;
+       color: #FFF;
+     }
+   }
 
+   article ul {
+     display: inline-block;
+     li {
+       padding-left: 10%;
+       color: #FFF;
+       list-style: none;
+       padding: 2.5px;
+
+     }
+   }
 
 
 
