@@ -113,13 +113,18 @@ textarea {
       display: none;
    }
 
-   .tabs {
+   nav {
+     padding-top: 200px;
+   }
+
+   [class*='tab'] {
      display: inline-block;
      padding: 1ex 2em;
      text-decoration: none;
      font-size: 13pt;
      color: #808080;
      border-bottom: #FFF solid 2px;
+     bottom: -1px;
    }
 
    article {
