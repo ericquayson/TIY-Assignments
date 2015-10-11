@@ -106,8 +106,7 @@ ul li {
 
 ul li:hover {
   position: absolute;
-  top: 15px;
-  background-color: #CCC;
+  background-color: #000000;
   opacity: .6;
 }
 
