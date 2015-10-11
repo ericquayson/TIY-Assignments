@@ -98,13 +98,23 @@ ul {
 }
 
 ul li {
+  margin-left: 10px;
   list-style-type: none;
   display: inline-block;
   width: inherit;
 }
 
-div h2 {
+ul li:hover {
+  position: absolute;
+  top: 15px;
+  background-color: #CCC;
+  opacity: .6;
+}
+
+h2 {
   display: none;
+  color: white;
+  text-align: center;
 }
 
 /* ==========================================================================

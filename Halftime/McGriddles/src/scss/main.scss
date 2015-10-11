@@ -94,7 +94,6 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
    main.container {
      width: 100%;
      font-family: 'Roboto', sans-serif;
@@ -104,19 +103,30 @@ textarea {
      display: inline-block;
      width: 177px;
      li {
+       margin-left: 10px;
        list-style-type: none;
        display: inline-block;
        width: inherit;
-
      }
      /* margin-top: 100px; */
    }
-div {
+
+  ul{
+
+      li:hover {
+        position: absolute;
+        top: 15px;
+        background-color: #CCC;
+        opacity: .6;
+      }
+    }
+
   h2 {
     display: none;
     color: white;
+    text-align: center;
   }
-}
+
 
 /* ==========================================================================
    Helper classes
