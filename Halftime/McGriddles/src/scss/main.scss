@@ -211,6 +211,25 @@ textarea {
     /* Style adjustments for viewports that meet the condition */
 }
 
+/* Tablet */
+
+@media only screen
+  and (min-device-width: 321px)
+  and (max-device-width: 1024px){
+    ul {
+      width: 50%;
+    }
+  }
+
+/* Desktop */
+
+@media only screen
+  and (min-device-width: 1025px) {
+    width: 100%;
+  }
+
+
+
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 120dpi) {

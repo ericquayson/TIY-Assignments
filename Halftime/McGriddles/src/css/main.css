@@ -191,6 +191,18 @@ h2 {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+/* Tablet */
+@media only screen and (min-device-width: 321px) and (max-device-width: 1024px) {
+  ul {
+    width: 50%;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-device-width: 1025px) {
+  width: 100%;
+}
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:

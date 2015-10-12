@@ -96,6 +96,10 @@ a[href] {
   position: relative;
 }
 
+a[href]:hover {
+  color: #CCC;
+}
+
 .panels {
   background-color: #6496ED;
   padding-top: 2.5%;
@@ -137,6 +141,9 @@ article ul li {
   padding: 2.5px;
 }
 
+/* Media Queries */
+/* Tablet */
+/* Desktop */
 /* ==========================================================================
    Helper classes
    ========================================================================== */
