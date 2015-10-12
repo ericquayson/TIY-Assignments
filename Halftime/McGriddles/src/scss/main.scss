@@ -94,22 +94,36 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-   tr {
-     background-color: black;
+   main.container {
+     width: 100%;
+     font-family: 'Roboto', sans-serif;
+   }
+   ul {
+     height: 284px;
+     display: inline-block;
+     width: 177px;
+     li {
+       margin-left: 10px;
+       list-style-type: none;
+       display: inline-block;
+       width: inherit;
+     }
+     /* margin-top: 100px; */
    }
 
+  ul{
+      li:hover {
+        position: absolute;
+        background-color: #000000;
+        opacity: .6;
+      }
+    }
 
-
-
-
-
-
-
-
-
-
-
+  h2 {
+    display: none;
+    color: white;
+    text-align: center;
+  }
 
 
 
@@ -196,6 +210,25 @@ textarea {
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 }
+
+/* Tablet */
+
+@media only screen
+  and (min-device-width: 321px)
+  and (max-device-width: 1024px){
+    ul {
+      width: 50%;
+    }
+  }
+
+/* Desktop */
+
+@media only screen
+  and (min-device-width: 1025px) {
+    width: 100%;
+  }
+
+
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),

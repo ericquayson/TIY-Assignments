@@ -86,64 +86,36 @@ textarea {
    Author's custom styles
    ========================================================================== */
 main.container {
-  box-sizing: border-box;
-  margin: 0 10%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 
-a[href] {
+ul {
+  height: 284px;
   display: inline-block;
-  padding: 1ex 0.5em;
-  position: relative;
+  width: 177px;
+  /* margin-top: 100px; */
 }
 
-a[href]:hover {
-  color: #CCC;
+ul li {
+  margin-left: 10px;
+  list-style-type: none;
+  display: inline-block;
+  width: inherit;
 }
 
-.panels {
-  background-color: #6496ED;
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
+ul li:hover {
+  position: absolute;
+  background-color: #000000;
+  opacity: .6;
+}
+
+h2 {
   display: none;
-  position: relative;
-  bottom: 15px;
+  color: white;
+  text-align: center;
 }
 
-nav {
-  padding-top: 200px;
-}
-
-[class*='tab'] {
-  display: inline-block;
-  padding: 1ex 2em;
-  text-decoration: none;
-  font-size: 13pt;
-  color: #808080;
-  border-bottom: #FFF solid 2px;
-  bottom: -1px;
-}
-
-article h3 {
-  padding-left: 5%;
-  font-size: 22pt;
-  font-weight: lighter;
-  color: #FFF;
-}
-
-article ul {
-  display: inline-block;
-}
-
-article ul li {
-  padding-left: 10%;
-  color: #FFF;
-  list-style: none;
-  padding: 2.5px;
-}
-
-/* Media Queries */
-/* Tablet */
-/* Desktop */
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -219,6 +191,18 @@ article ul li {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+/* Tablet */
+@media only screen and (min-device-width: 321px) and (max-device-width: 1024px) {
+  ul {
+    width: 50%;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-device-width: 1025px) {
+  width: 100%;
+}
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:

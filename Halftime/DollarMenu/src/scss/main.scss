@@ -106,6 +106,10 @@ textarea {
 
    }
 
+   a[href]:hover{
+     color: #CCC;
+   }
+
     .panels {
       background-color: #6496ED;
       padding-top: 2.5%;
@@ -139,8 +143,9 @@ textarea {
    }
 
    article ul {
-     display: inline-block;
+    display: inline-block;
      li {
+
        padding-left: 10%;
        color: #FFF;
        list-style: none;
@@ -148,8 +153,6 @@ textarea {
 
      }
    }
-
-
 
 
 
@@ -247,6 +250,26 @@ textarea {
        (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
+
+/* Media Queries */
+
+/* Tablet */
+
+@media screen (min-device-width: 768px) and (max-device-width: 1024px) {
+        ul {
+        width: 100%;
+      }
+  }
+
+/* Desktop */
+
+@media only screen and (min-device-width: 1025px) {
+    ul {
+      width: 100%;
+    }
+  }
+
+
 
 /* ==========================================================================
    Print styles.
